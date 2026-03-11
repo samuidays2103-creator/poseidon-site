@@ -119,17 +119,17 @@ ul { list-style: none; }
 }
 .hero-split__half:hover { flex: 1.15; }
 .hero-split__samui {
-  background: linear-gradient(180deg, #064e3b 0%, #0d4a6b 100%);
+  background: url('../images/hero-turtle.jpg') center/cover no-repeat;
 }
 .hero-split__uae {
-  background: linear-gradient(180deg, #7c2d12 0%, #1e3a5f 100%);
+  background: url('../images/triggerfish.jpg') center/cover no-repeat;
 }
 .hero-split__overlay {
   position: absolute; inset: 0;
-  background: rgba(0,0,0,0.3);
+  background: rgba(0,0,0,0.45);
   transition: background var(--transition);
 }
-.hero-split__half:hover .hero-split__overlay { background: rgba(0,0,0,0.15); }
+.hero-split__half:hover .hero-split__overlay { background: rgba(0,0,0,0.25); }
 .hero-split__content {
   position: relative; z-index: 2; text-align: center; padding: 20px;
 }
@@ -161,11 +161,11 @@ ul { list-style: none; }
   min-height: 70vh; display: flex; align-items: center;
   position: relative; overflow: hidden;
 }
-.page-hero--samui { background: linear-gradient(135deg, #064e3b 0%, #0c4a6b 50%, var(--navy) 100%); }
-.page-hero--uae { background: linear-gradient(135deg, #7c2d12 0%, #1e3a5f 50%, var(--navy) 100%); }
+.page-hero--samui { background: url('../images/hero-ocean.jpg') center/cover no-repeat; }
+.page-hero--uae { background: url('../images/batfish.jpg') center/cover no-repeat; }
 .page-hero__overlay {
   position: absolute; inset: 0;
-  background: radial-gradient(ellipse at 40% 60%, rgba(14,165,233,0.15) 0%, transparent 60%);
+  background: linear-gradient(180deg, rgba(6,13,31,0.5) 0%, rgba(6,13,31,0.7) 100%);
 }
 .page-hero__content { position: relative; padding: 120px 0 80px; }
 .page-hero__badge {
@@ -236,8 +236,8 @@ ul { list-style: none; }
 .destination__visual {
   height: 200px; position: relative;
 }
-.destination__visual--samui { background: linear-gradient(135deg, #064e3b, #0c4a6b); }
-.destination__visual--uae { background: linear-gradient(135deg, #7c2d12, #1e3a5f); }
+.destination__visual--samui { background: url('../images/divers-turtle.jpg') center/cover no-repeat; }
+.destination__visual--uae { background: url('../images/dive-center.jpg') center/cover no-repeat; }
 .destination__overlay {
   position: absolute; inset: 0;
   background: radial-gradient(circle at 50% 80%, rgba(14,165,233,0.2) 0%, transparent 60%);
