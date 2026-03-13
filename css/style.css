@@ -408,6 +408,7 @@ ul { list-style: none; }
 
   .features { grid-template-columns: repeat(2,1fr); }
   .cards, .tour-grid, .courses, .contacts { grid-template-columns: 1fr; }
+  .angthong-gallery { grid-template-columns: repeat(2,1fr) !important; }
   .destinations { grid-template-columns: 1fr; }
   .reasons { grid-template-columns: repeat(2,1fr); }
   .transfer-cities { flex-direction: column; align-items: center; }
