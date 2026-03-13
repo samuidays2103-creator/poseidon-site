@@ -4,23 +4,35 @@ window.addEventListener('scroll', () => {
   header.classList.toggle('header--scrolled', window.scrollY > 10);
 });
 
-// === Mobile Navigation ===
+// === Mobile Navigation (iOS Safari safe) ===
 const hamburger = document.getElementById('hamburger');
 const nav = document.getElementById('nav');
 
+function closeMenu() {
+  nav.classList.remove('open');
+  hamburger.classList.remove('active');
+  header.classList.remove('header--menu-open');
+  hamburger.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
+}
+
 hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  nav.classList.toggle('open');
-  document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+  const isOpen = nav.classList.toggle('open');
+  hamburger.classList.toggle('active', isOpen);
+  header.classList.toggle('header--menu-open', isOpen);
+  hamburger.setAttribute('aria-expanded', isOpen);
+  document.body.style.overflow = isOpen ? 'hidden' : '';
 });
 
-// Close mobile nav on link click
 nav.querySelectorAll('.nav-link').forEach(link => {
-  link.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    nav.classList.remove('open');
-    document.body.style.overflow = '';
-  });
+  link.addEventListener('click', closeMenu);
+});
+
+document.addEventListener('click', (e) => {
+  if (nav.classList.contains('open') &&
+      !nav.contains(e.target) && !hamburger.contains(e.target)) {
+    closeMenu();
+  }
 });
 
 // === Language Switching ===
