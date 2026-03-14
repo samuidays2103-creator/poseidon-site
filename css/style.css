@@ -424,3 +424,52 @@ ul { list-style: none; }
   .page-hero { min-height: 60vh; }
   .page-hero__content { padding: 100px 0 60px; }
 }
+
+/* ===== PRICE TABLES ===== */
+.price-table__wrap {
+  background: var(--abyss);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.price-table__wrap h3 {
+  color: var(--ocean);
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.price-table th {
+  text-align: left;
+  color: var(--ocean);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+.price-table th:last-child {
+  text-align: right;
+}
+.price-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--white);
+  font-size: 1rem;
+}
+.price-table td:last-child {
+  text-align: right;
+  font-weight: 700;
+  color: var(--coral);
+  white-space: nowrap;
+}
+.price-table tbody tr:last-child td {
+  border-bottom: none;
+}
+.price-table tbody tr:hover {
+  background: rgba(14,165,233,0.05);
+}
