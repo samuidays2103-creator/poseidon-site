@@ -167,7 +167,7 @@ ul { list-style: none; }
   position: absolute; inset: 0;
   background: linear-gradient(180deg, rgba(6,13,31,0.5) 0%, rgba(6,13,31,0.7) 100%);
 }
-.page-hero__content { position: relative; padding: 120px 0 80px; }
+.page-hero__content { position: relative; padding: 120px 24px 80px; }
 .page-hero__badge {
   display: inline-block; background: rgba(255,255,255,0.1);
   border: 1px solid rgba(255,255,255,0.2); border-radius: 24px;
@@ -422,7 +422,9 @@ ul { list-style: none; }
 
   .section { padding: 56px 0; }
   .page-hero { min-height: 60vh; }
-  .page-hero__content { padding: 100px 0 60px; }
+  .page-hero__content { padding: 100px 16px 60px; }
+  .page-hero__sub { max-width: 100%; }
+  .page-hero__title { font-size: clamp(28px,7vw,56px); }
 }
 
 /* ===== PRICE TABLES ===== */
