@@ -384,6 +384,12 @@ ul { list-style: none; }
     align-content: flex-start;
     height: auto;
   }
+  .header--menu-open .header__actions {
+    order: -1;
+    position: absolute;
+    right: 24px;
+    top: 18px;
+  }
   .header__nav {
     display: none;
     flex-direction: column;
