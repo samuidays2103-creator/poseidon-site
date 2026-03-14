@@ -180,6 +180,7 @@ ul { list-style: none; }
 /* ===== SECTIONS ===== */
 .section { padding: 88px 0; }
 .section--dark { background: var(--abyss); }
+.section--dark + .section--dark { padding-top: 0; }
 .section--accent {
   background: linear-gradient(135deg, var(--navy) 0%, #0c2d4a 100%);
   border-top: 1px solid var(--border);
@@ -420,7 +421,7 @@ ul { list-style: none; }
   .reasons { grid-template-columns: repeat(2,1fr); }
   .transfer-cities { flex-direction: column; align-items: center; }
 
-  .section { padding: 56px 0; }
+  .section { padding: 40px 0; }
   .page-hero { min-height: 60vh; }
   .page-hero__content { padding: 100px 16px 60px; }
   .page-hero__sub { max-width: 100%; }
