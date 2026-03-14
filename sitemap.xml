@@ -60,6 +60,25 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <!-- Dive Sites -->
+  <url>
+    <loc>https://www.poseidon.pro/sail-rock</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.poseidon.pro/chumphon-pinnacle</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.poseidon.pro/nang-yuan</loc>
+    <lastmod>2026-03-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- UAE Section -->
   <url>
     <loc>https://www.poseidon.pro/uae</loc>
