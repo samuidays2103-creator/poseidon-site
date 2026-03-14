@@ -361,7 +361,7 @@ ul { list-style: none; }
 .footer__brand { display: flex; align-items: center; gap: 12px; }
 .footer__logo { width: 36px; height: 36px; border-radius: 8px; }
 .footer__tagline { font-size: 12px; color: var(--muted); margin-top: 2px; }
-.footer__nav { display: flex; gap: 24px; }
+.footer__nav { display: flex; gap: 16px 24px; flex-wrap: wrap; justify-content: center; }
 .footer__nav a { font-size: 14px; color: var(--muted); transition: color var(--transition); }
 .footer__nav a:hover { color: var(--glow); }
 .footer__copy { font-size: 12px; color: var(--muted); }
