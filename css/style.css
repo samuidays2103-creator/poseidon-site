@@ -256,6 +256,7 @@ ul { list-style: none; }
 
 /* ===== TOUR GRID ===== */
 .tour-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+.tour-grid:has(> :nth-child(2)):not(:has(> :nth-child(3))) { grid-template-columns: repeat(2,1fr); }
 .tour {
   background: var(--surface); border: 1px solid var(--border);
   border-radius: var(--radius-lg); padding: 28px 24px;
