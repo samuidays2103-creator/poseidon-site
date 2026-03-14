@@ -295,6 +295,7 @@ ul { list-style: none; }
 }
 .course:hover { transform: translateY(-4px); border-color: rgba(14,165,233,0.3); }
 .course--featured { border: 2px solid var(--ocean); box-shadow: 0 -3px 0 0 var(--glow); }
+.course--featured:hover { border-color: var(--ocean); box-shadow: 0 -3px 0 0 var(--glow), 0 8px 30px rgba(14,165,233,0.15); }
 .course__level {
   display: inline-block; background: rgba(14,165,233,0.1);
   color: var(--glow); font-weight: 700; font-size: 11px;
