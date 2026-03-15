@@ -200,7 +200,7 @@ ul { list-style: none; }
   max-width: 800px; margin: 0 auto; text-align: center;
 }
 .divesite-overview .section__subtitle {
-  max-width: 100%;
+  max-width: 100%; text-align: justify;
 }
 
 /* ===== FEATURES (stats row) ===== */
