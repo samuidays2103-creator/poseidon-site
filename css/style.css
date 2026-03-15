@@ -195,6 +195,14 @@ ul { list-style: none; }
   margin-bottom: 48px; max-width: 600px; margin-left: auto; margin-right: auto;
 }
 
+/* ===== DIVE SITE OVERVIEW ALIGNMENT ===== */
+.divesite-overview {
+  max-width: 800px; margin: 0 auto; text-align: center;
+}
+.divesite-overview .section__subtitle {
+  max-width: 100%;
+}
+
 /* ===== FEATURES (stats row) ===== */
 .features {
   display: grid; grid-template-columns: repeat(4,1fr);
