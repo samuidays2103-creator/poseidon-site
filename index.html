@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -59,11 +59,12 @@
   </script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
   <!-- HEADER -->
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="./" class="header__logo">
-        <img src="images/logo.jpg" alt="Poseidon" class="logo-img">
+        <img src="images/logo.jpg" alt="Poseidon Diving Center — логотип" class="logo-img">
         <span class="logo-text">POSEIDON</span>
       </a>
       <nav class="header__nav" id="nav">
@@ -80,7 +81,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
     <!-- HERO — LOCATION CHOOSER -->
     <section class="hero-split">
       <a href="samui.html" class="hero-split__half hero-split__samui">
@@ -103,7 +104,7 @@
       </a>
       <!-- Center logo -->
       <div class="hero-split__center">
-        <img src="images/logo.jpg" alt="Poseidon" class="hero-split__logo">
+        <picture><source srcset="images/logo.webp" type="image/webp"><img loading="lazy" src="images/logo.jpg" alt="Poseidon Diving Center — логотип" class="hero-split__logo"></picture>
         <h1 class="hero-split__brand">POSEIDON</h1>
         <p class="hero-split__tagline" data-ru="Дайвинг центр" data-en="Diving Center">Дайвинг центр</p>
       </div>
@@ -322,7 +323,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <img src="images/logo.jpg" alt="Poseidon" class="footer__logo">
+        <img src="images/logo.jpg" alt="Poseidon Diving Center — логотип" class="footer__logo">
         <div>
           <div class="logo-text">POSEIDON</div>
           <div class="footer__tagline" data-ru="Дайвинг центр • Самуи • ОАЭ" data-en="Diving Center • Samui • UAE">Дайвинг центр • Самуи • ОАЭ</div>
@@ -341,6 +342,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>

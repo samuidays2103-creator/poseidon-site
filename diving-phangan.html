@@ -9,19 +9,46 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Дайвинг на Пангане и Sail Rock — Poseidon">
   <meta property="og:description" content="Дайвинг на Ко Пангане: Sail Rock, Mae Haad, китовые акулы, барракуды. Трансферы с Самуи.">
   <meta property="og:image" content="https://www.poseidon.pro/images/logo.jpg">
   <meta property="og:url" content="https://www.poseidon.pro/diving-phangan">
   <meta property="og:locale" content="ru_RU">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Poseidon",
+      "item": "https://www.poseidon.pro/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Ко Самуи",
+      "item": "https://www.poseidon.pro/samui.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Дайвинг Панган",
+      "item": "https://www.poseidon.pro/diving-phangan"
+    }
+  ]
+}
+  </script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="./" class="header__logo">
-        <img src="images/logo.jpg" alt="Poseidon" class="logo-img">
+        <img src="images/logo.jpg" alt="Poseidon Diving Center — логотип" class="logo-img">
         <span class="logo-text">POSEIDON</span>
       </a>
       <nav class="header__nav" id="nav">
@@ -40,7 +67,8 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><div class="container"><a href="./" data-ru="Главная" data-en="Home">Главная</a> <span class="breadcrumb__sep">/</span> <a href="samui.html" data-ru="Ко Самуи" data-en="Koh Samui">Ко Самуи</a> <span class="breadcrumb__sep">/</span> <span data-ru="Дайвинг Панган" data-en="Diving Phangan">Дайвинг Панган</span></div></nav>
     <!-- HERO -->
     <section class="page-hero page-hero--samui">
       <div class="page-hero__overlay"></div>
@@ -68,7 +96,7 @@
       <div class="container">
         <div class="content-block">
         <div style="text-align:center;margin-bottom:2rem;">
-          <img src="images/sail-rock.jpg" alt="Whale shark at Sail Rock" loading="lazy" style="max-width:100%;border-radius:16px;">
+          <picture><source srcset="images/sail-rock.webp" type="image/webp"><img src="images/sail-rock.jpg" alt="Sail Rock — лучший дайв-сайт Сиамского залива" loading="lazy" style="max-width:100%;border-radius:16px;"></picture>
         </div>
         <h2 class="section__title fade-in" data-ru="⭐ Sail Rock — жемчужина Сиамского залива" data-en="⭐ Sail Rock — Jewel of the Gulf of Thailand">⭐ Sail Rock — жемчужина Сиамского залива</h2>
         <p class="section__subtitle fade-in" data-ru="Sail Rock (Hin Bai) — это гранитная скала-пиннакл, поднимающаяся с глубины 40 метров и выступающая на 15 метров над водой. Расположен между Самуи и Ко Панган в открытом море. Это безусловно лучший дайв-сайт во всём Сиамском заливе, привлекающий дайверов со всего мира." data-en="Sail Rock (Hin Bai) is a granite pinnacle rising from 40 meters depth and protruding 15 meters above water. Located between Samui and Koh Phangan in the open sea. This is undoubtedly the best dive site in the entire Gulf of Thailand, attracting divers from around the world.">Sail Rock (Hin Bai) — это гранитная скала-пиннакл, поднимающаяся с глубины 40 метров и выступающая на 15 метров над водой. Расположен между Самуи и Ко Панган в открытом море. Это безусловно лучший дайв-сайт во всём Сиамском заливе, привлекающий дайверов со всего мира.</p>
@@ -77,7 +105,7 @@
         <div class="tour-grid">
 
           <article class="tour fade-in">
-            <img src="images/chimney-swimthrough.jpg" alt="The Chimney swim-through at Sail Rock" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/chimney-swimthrough.webp" type="image/webp"><img src="images/chimney-swimthrough.jpg" alt="Chimney Swimthrough — проплыв через камин" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <span class="tour__badge tour__badge--hot" data-ru="Визитка" data-en="Signature">Визитка</span>
               <h3 class="tour__title" data-ru="Камин (Chimney)" data-en="The Chimney">Камин (Chimney)</h3>
@@ -90,7 +118,7 @@
           </article>
 
           <article class="tour fade-in">
-            <img src="images/tour-sailrock-whaleshark.jpg" alt="Whale shark at Sail Rock" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/tour-sailrock-whaleshark.webp" type="image/webp"><img src="images/tour-sailrock-whaleshark.jpg" alt="Китовая акула у Sail Rock" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <span class="tour__badge tour__badge--unique" data-ru="Сезон: фев–май" data-en="Season: Feb–May">Сезон: фев–май</span>
               <h3 class="tour__title" data-ru="Китовые акулы" data-en="Whale Sharks">Китовые акулы</h3>
@@ -103,7 +131,7 @@
           </article>
 
           <article class="tour fade-in">
-            <img src="images/barracuda-tornado.jpg" alt="Barracuda tornado at Sail Rock" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/barracuda-tornado.webp" type="image/webp"><img src="images/barracuda-tornado.jpg" alt="Торнадо барракуд — подводная фотография" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <span class="tour__badge tour__badge--dive" data-ru="Зрелище" data-en="Spectacle">Зрелище</span>
               <h3 class="tour__title" data-ru="Торнадо барракуд" data-en="Barracuda Tornadoes">Торнадо барракуд</h3>
@@ -126,7 +154,7 @@
         <div class="tour-grid">
 
           <article class="tour fade-in">
-            <img src="images/tour-diving-coral.jpg" alt="Mae Haad coral reef Koh Phangan" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/tour-diving-coral.webp" type="image/webp"><img src="images/tour-diving-coral.jpg" alt="Коралловый риф — дайвинг тур" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <span class="tour__badge tour__badge--snork" data-ru="Новичкам" data-en="Beginners">Новичкам</span>
               <h3 class="tour__title">Mae Haad</h3>
@@ -141,7 +169,7 @@
           </article>
 
           <article class="tour fade-in">
-            <img src="images/tour-kotao-turtle.jpg" alt="Haad Yao reef diving Koh Phangan" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/tour-kotao-turtle.webp" type="image/webp"><img src="images/tour-kotao-turtle.jpg" alt="Черепаха на Ко Тао — дайвинг тур" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <h3 class="tour__title">Haad Yao</h3>
             </div>
@@ -200,7 +228,7 @@
 
         <div class="tour-grid">
           <article class="tour fade-in">
-            <img src="images/tour-sailrock-whaleshark.jpg" alt="Whale shark at Sail Rock" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/tour-sailrock-whaleshark.webp" type="image/webp"><img src="images/tour-sailrock-whaleshark.jpg" alt="Китовая акула у Sail Rock" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <span class="tour__badge tour__badge--hot" data-ru="Сезон: фев–май" data-en="Season: Feb–May">Сезон: фев–май</span>
               <h3 class="tour__title" data-ru="Китовые акулы" data-en="Whale Sharks">Китовые акулы</h3>
@@ -209,7 +237,7 @@
           </article>
 
           <article class="tour fade-in">
-            <img src="images/divers-turtle.jpg" alt="Sea turtle at Koh Phangan" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/divers-turtle.webp" type="image/webp"><img src="images/divers-turtle.jpg" alt="Дайверы с морской черепахой на Ко Самуи" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <span class="tour__badge tour__badge--snork" data-ru="Круглый год" data-en="Year-round">Круглый год</span>
               <h3 class="tour__title" data-ru="Морские черепахи" data-en="Sea Turtles">Морские черепахи</h3>
@@ -218,7 +246,7 @@
           </article>
 
           <article class="tour fade-in">
-            <img src="images/batfish.jpg" alt="Batfish at Sail Rock" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/batfish.webp" type="image/webp"><img src="images/batfish.jpg" alt="Рыба-бабочка — дайвинг в Фуджейре, ОАЭ" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <span class="tour__badge tour__badge--unique" data-ru="Резиденты" data-en="Residents">Резиденты</span>
               <h3 class="tour__title" data-ru="Бат-фиши и групперы" data-en="Batfish & Groupers">Бат-фиши и групперы</h3>
@@ -227,7 +255,7 @@
           </article>
 
           <article class="tour fade-in">
-            <img src="images/tour-lionfish.jpg" alt="Lionfish at coral reef" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/tour-lionfish.webp" type="image/webp"><img src="images/tour-lionfish.jpg" alt="Крылатка — подводная жизнь Сиамского залива" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <span class="tour__badge tour__badge--dive" data-ru="Фотогеничны" data-en="Photogenic">Фотогеничны</span>
               <h3 class="tour__title" data-ru="Крылатки и скорпены" data-en="Lionfish & Scorpionfish">Крылатки и скорпены</h3>
@@ -236,7 +264,7 @@
           </article>
 
           <article class="tour fade-in">
-            <img src="images/triggerfish.jpg" alt="Triggerfish at coral reef" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/triggerfish.webp" type="image/webp"><img src="images/triggerfish.jpg" alt="Тропическая рыба-триггер — дайвинг в ОАЭ" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <h3 class="tour__title" data-ru="Спинороги и рифовые рыбы" data-en="Triggerfish & Reef Fish">Спинороги и рифовые рыбы</h3>
             </div>
@@ -244,7 +272,7 @@
           </article>
 
           <article class="tour fade-in">
-            <img src="images/clownfish-anemone.jpg" alt="Clownfish in anemone — macro diving Koh Phangan" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/clownfish-anemone.webp" type="image/webp"><img src="images/clownfish-anemone.jpg" alt="Рыба-клоун в актинии — подводный мир" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <h3 class="tour__title" data-ru="Кораллы и макро" data-en="Corals & Macro">Кораллы и макро</h3>
             </div>
@@ -284,7 +312,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <img src="images/logo.jpg" alt="Poseidon" class="footer__logo">
+        <img src="images/logo.jpg" alt="Poseidon Diving Center — логотип" class="footer__logo">
         <div>
           <div class="logo-text">POSEIDON</div>
           <div class="footer__tagline" data-ru="Дайвинг центр • Самуи • ОАЭ" data-en="Diving Center • Samui • UAE">Дайвинг центр • Самуи • ОАЭ</div>
@@ -305,6 +333,6 @@
       <div class="footer__copy">&copy; 2026 Poseidon Diving Center</div>
     </div>
   </footer>
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>

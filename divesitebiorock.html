@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Biorock — Poseidon Diving Center">
   <meta property="og:description" content="Biorock dive site near Koh Tao. Depth, marine life, how to get there.">
@@ -17,12 +17,45 @@
   <meta property="og:url" content="https://www.poseidon.pro/divesitebiorock">
   <meta property="og:locale" content="ru_RU">
   <link rel="canonical" href="https://www.poseidon.pro/divesitebiorock">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Poseidon",
+      "item": "https://www.poseidon.pro/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Ко Самуи",
+      "item": "https://www.poseidon.pro/samui.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Дайв-сайты",
+      "item": "https://www.poseidon.pro/divesite.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Biorock",
+      "item": "https://www.poseidon.pro/divesitebiorock"
+    }
+  ]
+}
+  </script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="./" class="header__logo">
-        <img src="images/logo.jpg" alt="Poseidon" class="logo-img">
+        <img src="images/logo.jpg" alt="Poseidon Diving Center — логотип" class="logo-img">
         <span class="logo-text">POSEIDON</span>
       </a>
       <nav class="header__nav" id="nav">
@@ -41,7 +74,8 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><div class="container"><a href="./" data-ru="Главная" data-en="Home">Главная</a> <span class="breadcrumb__sep">/</span> <a href="samui.html" data-ru="Ко Самуи" data-en="Koh Samui">Ко Самуи</a> <span class="breadcrumb__sep">/</span> <a href="divesite.html" data-ru="Дайв-сайты" data-en="Dive Sites">Дайв-сайты</a> <span class="breadcrumb__sep">/</span> <span data-ru="Biorock" data-en="Biorock">Biorock</span></div></nav>
     <!-- HERO -->
     <section class="page-hero page-hero--samui">
       <div class="page-hero__overlay"></div>
@@ -61,7 +95,7 @@
       <div class="container">
         <div class="content-block">
         <div style="text-align:center;margin-bottom:2rem;">
-          <img src="images/biorock.jpg" alt="Biorock dive site map" style="max-width:100%;border-radius:16px;" class="fade-in" loading="lazy">
+          <picture><source srcset="images/biorock.webp" type="image/webp"><img src="images/biorock.jpg" alt="Biorock — искусственный риф" style="max-width:100%;border-radius:16px;" class="fade-in" loading="lazy"></picture>
         </div>
         <h2 class="section__title fade-in" data-ru="Дайв-сайт Biorock" data-en="Biorock Dive Site">Дайв-сайт Biorock</h2>
         <p class="section__subtitle fade-in"  data-ru="Искусственный дайв-сайт, созданный морским экологическим отделением Ко Тао в 2008 году. Состоит из пяти огромных сфер из металлических конструкций с подведённым электричеством — «технология ускоренного роста кораллов». Под действием электричества изменяется pH воды, что ускоряет рост кораллов, моллюсков, устриц и морских губок в 5 раз. Электричество НЕ опасно для дайверов. Живность: крылатка, рыба-камень и многое другое." data-en="An artificial dive site created by Koh Tao's marine ecology department in 2008. Consists of five huge spheres made of metal structures with electricity — 'accelerated coral growth technology'. The electricity changes seawater pH, accelerating growth of corals, mollusks, oysters, and sea sponges 5x faster. The electricity is NOT dangerous to divers. Wildlife: lionfish, stonefish, and much more.">Искусственный дайв-сайт, созданный морским экологическим отделением Ко Тао в 2008 году. Состоит из пяти огромных сфер из металлических конструкций с подведённым электричеством — «технология ускоренного роста кораллов». Под действием электричества изменяется pH воды, что ускоряет рост кораллов, моллюсков, устриц и морских губок в 5 раз. Электричество НЕ опасно для дайверов. Живность: крылатка, рыба-камень и многое другое.</p>
@@ -153,7 +187,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <img src="images/logo.jpg" alt="Poseidon" class="footer__logo">
+        <img src="images/logo.jpg" alt="Poseidon Diving Center — логотип" class="footer__logo">
         <div>
           <div class="logo-text">POSEIDON</div>
           <div class="footer__tagline" data-ru="Дайвинг центр • Самуи • ОАЭ" data-en="Diving Center • Samui • UAE">Дайвинг центр • Самуи • ОАЭ</div>
@@ -174,6 +208,6 @@
       <div class="footer__copy">&copy; 2026 Poseidon Diving Center</div>
     </div>
   </footer>
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>

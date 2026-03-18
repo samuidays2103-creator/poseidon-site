@@ -9,19 +9,46 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Контакты Poseidon UAE — Фуджейра">
   <meta property="og:description" content="Контакты дайвинг-центра в Фуджейре: телефон, WhatsApp, email, адрес.">
   <meta property="og:image" content="https://www.poseidon.pro/images/logo.jpg">
   <meta property="og:url" content="https://www.poseidon.pro/contacts-uae">
   <meta property="og:locale" content="ru_RU">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Poseidon",
+      "item": "https://www.poseidon.pro/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "ОАЭ",
+      "item": "https://www.poseidon.pro/uae.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Контакты",
+      "item": "https://www.poseidon.pro/contacts-uae"
+    }
+  ]
+}
+  </script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="./" class="header__logo">
-        <img src="images/logo.jpg" alt="Poseidon" class="logo-img">
+        <img src="images/logo.jpg" alt="Poseidon Diving Center — логотип" class="logo-img">
         <span class="logo-text">POSEIDON</span>
       </a>
       <nav class="header__nav" id="nav">
@@ -39,7 +66,8 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><div class="container"><a href="./" data-ru="Главная" data-en="Home">Главная</a> <span class="breadcrumb__sep">/</span> <a href="uae.html" data-ru="ОАЭ" data-en="UAE">ОАЭ</a> <span class="breadcrumb__sep">/</span> <span data-ru="Контакты" data-en="Contact">Контакты</span></div></nav>
     <section class="page-hero page-hero--uae">
       <div class="page-hero__overlay"></div>
       <div class="container page-hero__content">
@@ -56,7 +84,7 @@
     <!-- TEAM PHOTO -->
     <section class="section" style="padding-top:1rem;padding-bottom:0;">
       <div class="container" style="text-align:center;">
-        <img src="images/team-padi.jpg" alt="Наша команда PADI — Poseidon UAE" loading="lazy" style="max-width:100%;border-radius:16px;">
+        <picture><source srcset="images/team-padi.webp" type="image/webp"><img src="images/team-padi.jpg" alt="Команда инструкторов Poseidon" loading="lazy" style="max-width:100%;border-radius:16px;"></picture>
         <p class="section__subtitle fade-in" style="margin-top:1rem;" data-ru="Дайвинг для нас не просто увлечение или хобби, это наша жизнь! Наша команда профессионалов PADI будет рада открыть для вас подводный мир ОАЭ. Мы покажем вам самые лучшие и самые интересные места для погружений в Фуджейре и организуем трансфер из Дубай, Рас Эль Хайма и Шарджа." data-en="Diving isn't just a hobby for us — it's our life! Our team of PADI professionals will be happy to open the underwater world of the UAE for you. We'll show you the best and most interesting dive spots in Fujairah and organize transfers from Dubai, Ras Al Khaimah and Sharjah.">Дайвинг для нас не просто увлечение или хобби, это наша жизнь! Наша команда профессионалов PADI будет рада открыть для вас подводный мир ОАЭ. Мы покажем вам самые лучшие и самые интересные места для погружений в Фуджейре и организуем трансфер из Дубай, Рас Эль Хайма и Шарджа.</p>
       </div>
     </section>
@@ -318,7 +346,7 @@
     <!-- LOGO BANNER -->
     <section class="section" style="padding-top:1rem;padding-bottom:0;">
       <div class="container" style="text-align:center;">
-        <img src="images/uae-logo-round.png" alt="Poseidon Pro — PADI Dive Center" loading="lazy" style="max-width:200px;border-radius:50%;">
+        <picture><source srcset="images/uae-logo-round.webp" type="image/webp"><img src="images/uae-logo-round.png" alt="Poseidon UAE — логотип" loading="lazy" style="max-width:200px;border-radius:50%;"></picture>
       </div>
     </section>
 
@@ -347,7 +375,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <img src="images/logo.jpg" alt="Poseidon" class="footer__logo">
+        <img src="images/logo.jpg" alt="Poseidon Diving Center — логотип" class="footer__logo">
         <div>
           <div class="logo-text">POSEIDON</div>
           <div class="footer__tagline" data-ru="Дайвинг центр • Самуи • ОАЭ" data-en="Diving Center • Samui • UAE">Дайвинг центр • Самуи • ОАЭ</div>
@@ -361,6 +389,6 @@
       <div class="footer__copy">&copy; 2026 Poseidon Diving Center</div>
     </div>
   </footer>
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>

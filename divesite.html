@@ -9,19 +9,46 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Дайв-сайты Самуи — Poseidon">
   <meta property="og:description" content="Лучшие места для погружений: White Rock, Twins, Sail Rock, Chumphon Pinnacle, Southwest Pinnacle.">
   <meta property="og:image" content="https://www.poseidon.pro/images/logo.jpg">
   <meta property="og:url" content="https://www.poseidon.pro/divesite">
   <meta property="og:locale" content="ru_RU">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Poseidon",
+      "item": "https://www.poseidon.pro/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Ко Самуи",
+      "item": "https://www.poseidon.pro/samui.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Дайв-сайты",
+      "item": "https://www.poseidon.pro/divesite"
+    }
+  ]
+}
+  </script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="./" class="header__logo">
-        <img src="images/logo.jpg" alt="Poseidon" class="logo-img">
+        <img src="images/logo.jpg" alt="Poseidon Diving Center — логотип" class="logo-img">
         <span class="logo-text">POSEIDON</span>
       </a>
       <nav class="header__nav" id="nav">
@@ -40,7 +67,8 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><div class="container"><a href="./" data-ru="Главная" data-en="Home">Главная</a> <span class="breadcrumb__sep">/</span> <a href="samui.html" data-ru="Ко Самуи" data-en="Koh Samui">Ко Самуи</a> <span class="breadcrumb__sep">/</span> <span data-ru="Дайв-сайты" data-en="Dive Sites">Дайв-сайты</span></div></nav>
     <!-- HERO -->
     <section class="page-hero page-hero--samui">
       <div class="page-hero__overlay"></div>
@@ -71,7 +99,7 @@
 
           <article class="tour fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/white-rock.jpg" alt="Карта дайв-сайта White Rock" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/white-rock.webp" type="image/webp"><img src="images/white-rock.jpg" alt="White Rock — коралловый риф Ко Тао" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--hot" data-ru="Топ" data-en="Top">Топ</span>
@@ -89,7 +117,7 @@
 
           <article class="tour fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/twins.jpg" alt="Карта дайв-сайта Twins" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/twins.webp" type="image/webp"><img src="images/twins.jpg" alt="Twins — парные скалы для дайвинга" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--hot" data-ru="Популярный" data-en="Popular">Популярный</span>
@@ -107,7 +135,7 @@
 
           <article class="tour fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/sail-rock-map.jpg" alt="Карта и профиль дайв-сайта Sail Rock" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/sail-rock-map.webp" type="image/webp"><img src="images/sail-rock-map.jpg" alt="Карта расположения Sail Rock" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--hot" data-ru="Легенда" data-en="Legendary">Легенда</span>
@@ -125,7 +153,7 @@
 
           <article class="tour fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/chumphon-pinnacle.jpg" alt="Карта дайв-сайта Chumphon Pinnacle" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/chumphon-pinnacle.webp" type="image/webp"><img src="images/chumphon-pinnacle.jpg" alt="Chumphon Pinnacle — глубоководный дайв-сайт" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--dive" data-ru="Средний" data-en="Intermediate">Средний</span>
@@ -143,7 +171,7 @@
 
           <article class="tour fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/southwest-pinnacle.jpg" alt="Карта дайв-сайта Southwest Pinnacle" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/southwest-pinnacle.webp" type="image/webp"><img src="images/southwest-pinnacle.jpg" alt="Southwest Pinnacle — дайв-сайт Ко Тао" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--dive" data-ru="Средний" data-en="Intermediate">Средний</span>
@@ -161,7 +189,7 @@
 
           <article class="tour fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/mango-bay.jpg" alt="Карта дайв-сайта Mango Bay" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/mango-bay.webp" type="image/webp"><img src="images/mango-bay.jpg" alt="Mango Bay — бухта для начинающих дайверов" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--snork" data-ru="Простой" data-en="Easy">Простой</span>
@@ -179,7 +207,7 @@
 
           <article class="tour fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/hin-wong-pinnacle.jpg" alt="Карта дайв-сайта Hin Wong Pinnacle" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/hin-wong-pinnacle.webp" type="image/webp"><img src="images/hin-wong-pinnacle.jpg" alt="Hin Wong Pinnacle — глубоководный дайвинг" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--unique" data-ru="Кораллы" data-en="Corals">Кораллы</span>
@@ -197,7 +225,7 @@
 
           <article class="tour fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/shark-island.jpg" alt="Карта дайв-сайта Shark Island" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/shark-island.webp" type="image/webp"><img src="images/shark-island.jpg" alt="Shark Island — дайвинг у острова акул" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--dive" data-ru="Средний" data-en="Intermediate">Средний</span>
@@ -215,7 +243,7 @@
 
           <article class="tour fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/japanese-gardens.jpg" alt="Карта дайв-сайта Japanese Gardens, Koh Nangyuan" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/japanese-gardens.webp" type="image/webp"><img src="images/japanese-gardens.jpg" alt="Japanese Gardens — подводный сад Ко Тао" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--hot" data-ru="Наньюань" data-en="Nang Yuan">Наньюань</span>
@@ -233,7 +261,7 @@
 
           <article class="tour fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/red-rock.jpg" alt="Карта дайв-сайта Red Rock" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/red-rock.webp" type="image/webp"><img src="images/red-rock.jpg" alt="Red Rock — дайв-сайт у Нанг Юань" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--dive" data-ru="Средний" data-en="Intermediate">Средний</span>
@@ -251,7 +279,7 @@
 
           <article class="tour fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/green-rock.jpg" alt="Карта дайв-сайта Green Rock" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/green-rock.webp" type="image/webp"><img src="images/green-rock.jpg" alt="Green Rock — дайв-сайт Ко Тао" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--dive" data-ru="Средний" data-en="Intermediate">Средний</span>
@@ -269,7 +297,7 @@
 
           <article class="tour fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/pottery-3rocks.jpg" alt="Карта дайв-сайтов Pottery и 3 Rocks" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/pottery-3rocks.webp" type="image/webp"><img src="images/pottery-3rocks.jpg" alt="Pottery / 3 Rocks — дайв-сайт" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--snork" data-ru="Простой" data-en="Easy">Простой</span>
@@ -287,7 +315,7 @@
 
           <article class="tour fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/no-name-pinnacle.jpg" alt="Карта дайв-сайта No Name Pinnacle" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/no-name-pinnacle.webp" type="image/webp"><img src="images/no-name-pinnacle.jpg" alt="No Name Pinnacle — секретный дайв-сайт" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--dive" data-ru="Сложный" data-en="Advanced">Сложный</span>
@@ -305,7 +333,7 @@
 
           <article class="tour fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/tanote-bay.jpg" alt="Карта дайв-сайта Tanote Bay" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/tanote-bay.webp" type="image/webp"><img src="images/tanote-bay.jpg" alt="Карта дайв-сайта Tanote Bay" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--snork" data-ru="Простой" data-en="Easy">Простой</span>
@@ -323,7 +351,7 @@
 
           <article class="tour fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/lighthouse.jpg" alt="Карта дайв-сайта Lighthouse" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/lighthouse.webp" type="image/webp"><img src="images/lighthouse.jpg" alt="Lighthouse Bay — дайв-сайт Ко Тао" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--snork" data-ru="Простой" data-en="Easy">Простой</span>
@@ -341,7 +369,7 @@
 
           <article class="tour fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/laem-thian.jpg" alt="Карта дайв-сайта Laem Thian" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/laem-thian.webp" type="image/webp"><img src="images/laem-thian.jpg" alt="Laem Thian — мыс для снорклинга" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--dive" data-ru="Средний-Сложный" data-en="Intermediate-Advanced">Средний-Сложный</span>
@@ -359,7 +387,7 @@
 
           <article class="tour fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/biorock.jpg" alt="Карта дайв-сайта Biorock" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/biorock.webp" type="image/webp"><img src="images/biorock.jpg" alt="Biorock — искусственный риф" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--unique" data-ru="Эко-проект" data-en="Eco-project">Эко-проект</span>
@@ -377,7 +405,7 @@
 
           <article class="tour fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/king-kong.jpg" alt="Карта дайв-сайта King Kong" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/king-kong.webp" type="image/webp"><img src="images/king-kong.jpg" alt="King Kong — подводная скала" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--snork" data-ru="Простой-Средний" data-en="Easy-Intermediate">Простой-Средний</span>
@@ -395,7 +423,7 @@
 
           <article class="tour fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/hin-pee-wee.jpg" alt="Карта дайв-сайта Hin Pee Wee" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/hin-pee-wee.webp" type="image/webp"><img src="images/hin-pee-wee.jpg" alt="Hin Pee Wee — подводная скала" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--dive" data-ru="Средний" data-en="Intermediate">Средний</span>
@@ -413,7 +441,7 @@
 
           <article class="tour fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/hin-ngam-aow-leuk.jpg" alt="Карта дайв-сайтов Hin Ngam и Aow Leuk" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/hin-ngam-aow-leuk.webp" type="image/webp"><img src="images/hin-ngam-aow-leuk.jpg" alt="Hin Ngam и Aow Leuk — дайв-сайты" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--snork" data-ru="Простой" data-en="Easy">Простой</span>
@@ -431,7 +459,7 @@
 
           <article class="tour fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/buoyancy-world.jpg" alt="Карта дайв-сайта Buoyancy World" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/buoyancy-world.webp" type="image/webp"><img src="images/buoyancy-world.jpg" alt="Buoyancy World — тренировочный сайт" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--unique" data-ru="Уникальный" data-en="Unique">Уникальный</span>
@@ -449,7 +477,7 @@
 
           <article class="tour fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/htms-sattakut.jpg" alt="HTMS Sattakut — карта и фото рэка" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/htms-sattakut.webp" type="image/webp"><img src="images/htms-sattakut.jpg" alt="HTMS Sattakut — затопленный корабль" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--hot" data-ru="Рэк" data-en="Wreck">Рэк</span>
@@ -467,7 +495,7 @@
 
           <article class="tour fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/koh-yippon.jpg" alt="Карта дайв-сайта Koh Yippon" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/koh-yippon.webp" type="image/webp"><img src="images/koh-yippon.jpg" alt="Koh Yippon — дайв-сайт" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--dive" data-ru="Средний-Сложный" data-en="Intermediate-Advanced">Средний-Сложный</span>
@@ -516,7 +544,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <img src="images/logo.jpg" alt="Poseidon" class="footer__logo">
+        <img src="images/logo.jpg" alt="Poseidon Diving Center — логотип" class="footer__logo">
         <div>
           <div class="logo-text">POSEIDON</div>
           <div class="footer__tagline" data-ru="Дайвинг центр • Самуи • ОАЭ" data-en="Diving Center • Samui • UAE">Дайвинг центр • Самуи • ОАЭ</div>
@@ -537,6 +565,6 @@
       <div class="footer__copy">&copy; 2026 Poseidon Diving Center</div>
     </div>
   </footer>
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>

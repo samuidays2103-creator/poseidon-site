@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <style>
     .price-table { width: 100%; border-collapse: collapse; margin: 0 0 2rem; }
     .price-table th,
@@ -37,12 +37,71 @@
   <meta property="og:image" content="https://www.poseidon.pro/images/logo.jpg">
   <meta property="og:url" content="https://www.poseidon.pro/prices">
   <meta property="og:locale" content="ru_RU">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Poseidon",
+      "item": "https://www.poseidon.pro/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Ко Самуи",
+      "item": "https://www.poseidon.pro/samui.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Цены",
+      "item": "https://www.poseidon.pro/prices"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Что включено в цену дайв-тура на Самуи?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "В стоимость включены: трансфер из отеля и обратно, полный комплект снаряжения, 2 погружения, обед, напитки, страховка, инструктор."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Есть ли скидки для групп?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Да, при бронировании от 2 человек действует специальная цена. Для больших групп (5+) — индивидуальные условия, напишите нам."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Как оплатить?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Принимаем наличные (бат, доллары), банковский перевод, криптовалюту. Предоплата не требуется — оплата на месте."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="./" class="header__logo">
-        <img src="images/logo.jpg" alt="Poseidon" class="logo-img">
+        <img src="images/logo.jpg" alt="Poseidon Diving Center — логотип" class="logo-img">
         <span class="logo-text">POSEIDON</span>
       </a>
       <nav class="header__nav" id="nav">
@@ -61,7 +120,8 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><div class="container"><a href="./" data-ru="Главная" data-en="Home">Главная</a> <span class="breadcrumb__sep">/</span> <a href="samui.html" data-ru="Ко Самуи" data-en="Koh Samui">Ко Самуи</a> <span class="breadcrumb__sep">/</span> <span data-ru="Цены" data-en="Prices">Цены</span></div></nav>
     <!-- HERO -->
     <section class="page-hero page-hero--samui">
       <div class="page-hero__overlay"></div>
@@ -78,7 +138,7 @@
     <!-- DOLPHIN BANNER -->
     <section class="section" style="padding-top:1rem;padding-bottom:0;">
       <div class="container" style="text-align:center;">
-        <img src="images/dolphin-prices.jpg" alt="Dolphin" loading="lazy" style="max-width:100%;border-radius:16px;">
+        <picture><source srcset="images/dolphin-prices.webp" type="image/webp"><img src="images/dolphin-prices.jpg" alt="Дельфин — дайвинг на Самуи" loading="lazy" style="max-width:100%;border-radius:16px;"></picture>
       </div>
     </section>
 
@@ -488,7 +548,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <img src="images/logo.jpg" alt="Poseidon" class="footer__logo">
+        <img src="images/logo.jpg" alt="Poseidon Diving Center — логотип" class="footer__logo">
         <div>
           <div class="logo-text">POSEIDON</div>
           <div class="footer__tagline" data-ru="Дайвинг центр • Самуи • ОАЭ" data-en="Diving Center • Samui • UAE">Дайвинг центр • Самуи • ОАЭ</div>
@@ -510,7 +570,7 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
   <script>
     // Island tab switcher
     document.querySelectorAll('.island-tab').forEach(tab => {

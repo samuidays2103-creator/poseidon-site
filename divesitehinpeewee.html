@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Hin Pee Wee — Poseidon Diving Center">
   <meta property="og:description" content="Hin Pee Wee dive site near Koh Tao. Depth, marine life, how to get there.">
@@ -17,12 +17,45 @@
   <meta property="og:url" content="https://www.poseidon.pro/divesitehinpeewee">
   <meta property="og:locale" content="ru_RU">
   <link rel="canonical" href="https://www.poseidon.pro/divesitehinpeewee">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Poseidon",
+      "item": "https://www.poseidon.pro/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Ко Самуи",
+      "item": "https://www.poseidon.pro/samui.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Дайв-сайты",
+      "item": "https://www.poseidon.pro/divesite.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Hin Pee Wee",
+      "item": "https://www.poseidon.pro/divesitehinpeewee"
+    }
+  ]
+}
+  </script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="./" class="header__logo">
-        <img src="images/logo.jpg" alt="Poseidon" class="logo-img">
+        <img src="images/logo.jpg" alt="Poseidon Diving Center — логотип" class="logo-img">
         <span class="logo-text">POSEIDON</span>
       </a>
       <nav class="header__nav" id="nav">
@@ -41,7 +74,8 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><div class="container"><a href="./" data-ru="Главная" data-en="Home">Главная</a> <span class="breadcrumb__sep">/</span> <a href="samui.html" data-ru="Ко Самуи" data-en="Koh Samui">Ко Самуи</a> <span class="breadcrumb__sep">/</span> <a href="divesite.html" data-ru="Дайв-сайты" data-en="Dive Sites">Дайв-сайты</a> <span class="breadcrumb__sep">/</span> <span data-ru="Hin Pee Wee" data-en="Hin Pee Wee">Hin Pee Wee</span></div></nav>
     <!-- HERO -->
     <section class="page-hero page-hero--samui">
       <div class="page-hero__overlay"></div>
@@ -61,7 +95,7 @@
       <div class="container">
         <div class="content-block">
         <div style="text-align:center;margin-bottom:2rem;">
-          <img src="images/hin-pee-wee.jpg" alt="Hin Pee Wee dive site map" style="max-width:100%;border-radius:16px;" class="fade-in" loading="lazy">
+          <picture><source srcset="images/hin-pee-wee.webp" type="image/webp"><img src="images/hin-pee-wee.jpg" alt="Hin Pee Wee — подводная скала" style="max-width:100%;border-radius:16px;" class="fade-in" loading="lazy"></picture>
         </div>
         <h2 class="section__title fade-in" data-ru="Дайв-сайт Hin Pee Wee" data-en="Hin Pee Wee Dive Site">Дайв-сайт Hin Pee Wee</h2>
         <p class="section__subtitle fade-in"  data-ru="Маленький, но глубоководный сайт в 5-10 минутах от причала Май Хаад, Ко Тао. Огромный камень, окружённый небольшими каменными вершинами — прост для навигации. Большое количество мягких кораллов и морской живности. Живность: барракуды, рыба-ангел, рыба-бабочка, белоглазая мурена, рыба-химера, белопёрая кабуба." data-en="Small but deep site 5-10 minutes from Mae Haad pier, Koh Tao. A huge rock surrounded by smaller pinnacles — easy to navigate. Abundant soft corals and marine life. Wildlife: barracuda, angelfish, butterflyfish, white-eyed moray, chimaera, whitetip reef shark.">Маленький, но глубоководный сайт в 5-10 минутах от причала Май Хаад, Ко Тао. Огромный камень, окружённый небольшими каменными вершинами — прост для навигации. Большое количество мягких кораллов и морской живности. Живность: барракуды, рыба-ангел, рыба-бабочка, белоглазая мурена, рыба-химера, белопёрая кабуба.</p>
@@ -153,7 +187,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <img src="images/logo.jpg" alt="Poseidon" class="footer__logo">
+        <img src="images/logo.jpg" alt="Poseidon Diving Center — логотип" class="footer__logo">
         <div>
           <div class="logo-text">POSEIDON</div>
           <div class="footer__tagline" data-ru="Дайвинг центр • Самуи • ОАЭ" data-en="Diving Center • Samui • UAE">Дайвинг центр • Самуи • ОАЭ</div>
@@ -174,6 +208,6 @@
       <div class="footer__copy">&copy; 2026 Poseidon Diving Center</div>
     </div>
   </footer>
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>

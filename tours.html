@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Экскурсии на Ко Самуи — Poseidon">
   <meta property="og:description" content="Морской парк Анг Тонг, остров Свинок, Нанг Юань, розовые дельфины, рыбалка, джип-сафари, зиплайн.">
@@ -17,12 +17,71 @@
   <meta property="og:url" content="https://www.poseidon.pro/tours">
   <meta property="og:locale" content="ru_RU">
   <link rel="canonical" href="https://www.poseidon.pro/tours">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Poseidon",
+      "item": "https://www.poseidon.pro/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Ко Самуи",
+      "item": "https://www.poseidon.pro/samui.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Экскурсии",
+      "item": "https://www.poseidon.pro/tours"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Какие экскурсии есть на Самуи?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Морские: Анг Тонг, Нанг Юань, снорклинг, розовые дельфины, рыбалка. Наземные: сафари, зиплайн, ATV, храмы, кулинарный класс."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Что взять с собой на экскурсию?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Купальник, полотенце, солнцезащитный крем, головной убор. Всё остальное (снаряжение, питание, вода) включено в стоимость."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Можно ли отменить бронирование?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Бесплатная отмена за 24 часа до начала. При отмене в день экскурсии — по согласованию, обычно переносим на другую дату."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="./" class="header__logo">
-        <img src="images/logo.jpg" alt="Poseidon" class="logo-img">
+        <img src="images/logo.jpg" alt="Poseidon Diving Center — логотип" class="logo-img">
         <span class="logo-text">POSEIDON</span>
       </a>
       <nav class="header__nav" id="nav">
@@ -40,7 +99,8 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><div class="container"><a href="./" data-ru="Главная" data-en="Home">Главная</a> <span class="breadcrumb__sep">/</span> <a href="samui.html" data-ru="Ко Самуи" data-en="Koh Samui">Ко Самуи</a> <span class="breadcrumb__sep">/</span> <span data-ru="Экскурсии" data-en="Tours">Экскурсии</span></div></nav>
     <!-- HERO -->
     <section class="page-hero page-hero--samui">
       <div class="page-hero__overlay"></div>
@@ -61,16 +121,16 @@
         <h2 class="section__title fade-in" data-ru="Морской парк Анг Тонг" data-en="Ang Thong Marine Park">Морской парк Анг Тонг</h2>
         <p class="section__subtitle fade-in" data-ru="Архипелаг из 42 островов с потрясающей природой — 6 вариантов экскурсий" data-en="Archipelago of 42 islands with stunning nature — 6 tour options">Архипелаг из 42 островов с потрясающей природой — 6 вариантов экскурсий</p>
         <div class="fade-in angthong-gallery" style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:2rem;">
-          <img src="images/angthong-islands.jpg" alt="Острова Анг Тонг — панорама" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px;">
-          <img src="images/angthong-emerald-lake.jpg" alt="Изумрудное озеро Ко Мае Ко" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px;">
-          <img src="images/angthong-beach.jpg" alt="Пляж Анг Тонг" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px;">
-          <img src="images/angthong-viewpoint.jpg" alt="Смотровая Анг Тонг" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px;">
+          <picture><source srcset="images/angthong-islands.webp" type="image/webp"><img src="images/angthong-islands.jpg" alt="Острова Анг Тонг — вид с моря" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px;"></picture>
+          <picture><source srcset="images/angthong-emerald-lake.webp" type="image/webp"><img src="images/angthong-emerald-lake.jpg" alt="Изумрудное озеро в Анг Тонге" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px;"></picture>
+          <picture><source srcset="images/angthong-beach.webp" type="image/webp"><img src="images/angthong-beach.jpg" alt="Пляж национального парка Анг Тонг" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px;"></picture>
+          <picture><source srcset="images/angthong-viewpoint.webp" type="image/webp"><img src="images/angthong-viewpoint.jpg" alt="Смотровая площадка Анг Тонг" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px;"></picture>
         </div>
         <div class="tour-grid">
 
           <article class="tour fade-in">
             <div class="tour__img">
-              <img src="images/tour-angthong-speedboat.jpg" alt="Спидботы на Анг Тонг" loading="lazy">
+              <picture><source srcset="images/tour-angthong-speedboat.webp" type="image/webp"><img src="images/tour-angthong-speedboat.jpg" alt="Спидбот-тур в Анг Тонг" loading="lazy"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--hot" data-ru="Популярный" data-en="Popular">Популярный</span>
@@ -91,7 +151,7 @@
 
           <article class="tour fade-in">
             <div class="tour__img">
-              <img src="images/tour-angthong-redbaron.jpg" alt="Красный Барон — парусник" loading="lazy">
+              <picture><source srcset="images/tour-angthong-redbaron.webp" type="image/webp"><img src="images/tour-angthong-redbaron.jpg" alt="Red Baron — тур в Анг Тонг" loading="lazy"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--unique" data-ru="Парусник" data-en="Sailing">Парусник</span>
@@ -111,7 +171,7 @@
 
           <article class="tour fade-in">
             <div class="tour__img">
-              <img src="images/tour-angthong-thaiboat.jpg" alt="Тайский корабль в Анг Тонг" loading="lazy">
+              <picture><source srcset="images/tour-angthong-thaiboat.webp" type="image/webp"><img src="images/tour-angthong-thaiboat.jpg" alt="Тайская лодка — тур в Анг Тонг" loading="lazy"></picture>
             </div>
             <div class="tour__header">
               <h3 class="tour__title" data-ru="Тайский корабль" data-en="Thai Boat">Тайский корабль</h3>
@@ -131,7 +191,7 @@
 
           <article class="tour fade-in">
             <div class="tour__img">
-              <img src="images/tour-naga-yacht.jpg" alt="Яхта Нага — Boutique Yachting Samui" loading="lazy">
+              <picture><source srcset="images/tour-naga-yacht.webp" type="image/webp"><img src="images/tour-naga-yacht.jpg" alt="Яхтенная экскурсия Naga" loading="lazy"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--dive" data-ru="Премиум" data-en="Premium">Премиум</span>
@@ -152,7 +212,7 @@
 
           <article class="tour fade-in">
             <div class="tour__img">
-              <img src="images/tour-vip-speedboat.jpg" alt="VIP яхта для индивидуального тура" loading="lazy">
+              <picture><source srcset="images/tour-vip-speedboat.webp" type="image/webp"><img src="images/tour-vip-speedboat.jpg" alt="VIP спидбот-тур по островам" loading="lazy"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--unique" data-ru="VIP" data-en="VIP">VIP</span>
@@ -168,7 +228,7 @@
 
           <article class="tour fade-in">
             <div class="tour__img">
-              <img src="images/tour-angthong-stars.jpg" alt="Звёздное небо в Анг Тонг" loading="lazy">
+              <picture><source srcset="images/tour-angthong-stars.webp" type="image/webp"><img src="images/tour-angthong-stars.jpg" alt="Звёздное небо в Анг Тонге" loading="lazy"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--snork" data-ru="С ночёвкой" data-en="Overnight">С ночёвкой</span>
@@ -199,7 +259,7 @@
 
           <article class="tour fade-in">
             <div class="tour__img">
-              <img src="images/tour-nangyuan-new.jpg" alt="Ко Нанг Юань — три острова с высоты" loading="lazy">
+              <picture><source srcset="images/tour-nangyuan-new.webp" type="image/webp"><img src="images/tour-nangyuan-new.jpg" alt="Снорклинг-тур на Нанг Юань" loading="lazy"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--snork" data-ru="Снорклинг" data-en="Snorkeling">Снорклинг</span>
@@ -222,7 +282,7 @@
 
           <article class="tour fade-in">
             <div class="tour__img">
-              <img src="images/tour-pig-island.jpg" alt="Остров Свинок Ко Матсум" loading="lazy">
+              <picture><source srcset="images/tour-pig-island.webp" type="image/webp"><img src="images/tour-pig-island.jpg" alt="Свиной остров — экскурсия с Самуи" loading="lazy"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--unique" data-ru="Уникально" data-en="Unique">Уникально</span>
@@ -249,7 +309,7 @@
 
           <article class="tour fade-in">
             <div class="tour__img">
-              <img src="images/tour-fishing-boat.jpg" alt="Рыбалка на Самуи" loading="lazy">
+              <picture><source srcset="images/tour-fishing-boat.webp" type="image/webp"><img src="images/tour-fishing-boat.jpg" alt="Рыбалка на Самуи — морская экскурсия" loading="lazy"></picture>
             </div>
             <div class="tour__header">
               <h3 class="tour__title" data-ru="Морская рыбалка" data-en="Sea Fishing">Морская рыбалка</h3>
@@ -269,7 +329,7 @@
 
           <article class="tour fade-in">
             <div class="tour__img">
-              <img src="images/tour-topcats-fishing.jpg" alt="Арапайма — TopCats Fishing Samui" loading="lazy">
+              <picture><source srcset="images/tour-topcats-fishing.webp" type="image/webp"><img src="images/tour-topcats-fishing.jpg" alt="TopCats — рыбалка на катамаране" loading="lazy"></picture>
             </div>
             <div class="tour__header">
               <h3 class="tour__title" data-ru="Озёрная рыбалка TopCats" data-en="Lake Fishing TopCats">Озёрная рыбалка TopCats</h3>
@@ -291,7 +351,7 @@
 
           <article class="tour fade-in">
             <div class="tour__img">
-              <img src="images/tour-jetski.jpg" alt="Гидроциклы на Самуи" loading="lazy">
+              <picture><source srcset="images/tour-jetski.webp" type="image/webp"><img src="images/tour-jetski.jpg" alt="Джетски на Ко Самуи" loading="lazy"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--hot" data-ru="Адреналин" data-en="Thrill">Адреналин</span>
@@ -312,7 +372,7 @@
 
           <article class="tour fade-in">
             <div class="tour__img">
-              <img src="images/tour-pink-dolphins.jpg" alt="Розовые дельфины — Самуи / Ханом" loading="lazy">
+              <picture><source srcset="images/tour-pink-dolphins.webp" type="image/webp"><img src="images/tour-pink-dolphins.jpg" alt="Розовые дельфины — морская экскурсия на Самуи" loading="lazy"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--unique" data-ru="Уникально" data-en="Unique">Уникально</span>
@@ -343,7 +403,7 @@
 
           <article class="tour fade-in">
             <div class="tour__img">
-              <img src="images/tour-plai-laem.jpg" alt="Храм Plai Laem на Самуи" loading="lazy">
+              <picture><source srcset="images/tour-plai-laem.webp" type="image/webp"><img src="images/tour-plai-laem.jpg" alt="Храм Плай Лаем — Ко Самуи" loading="lazy"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--hot" data-ru="Популярный" data-en="Popular">Популярный</span>
@@ -364,7 +424,7 @@
 
           <article class="tour fade-in">
             <div class="tour__img">
-              <img src="images/tour-atv-buggy.jpg" alt="Квадроциклы и багги на Самуи" loading="lazy">
+              <picture><source srcset="images/tour-atv-buggy.webp" type="image/webp"><img src="images/tour-atv-buggy.jpg" alt="ATV/багги тур по джунглям Самуи" loading="lazy"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--dive" data-ru="Адреналин" data-en="Thrill">Адреналин</span>
@@ -393,7 +453,7 @@
 
           <article class="tour fade-in">
             <div class="tour__img">
-              <img src="images/tour-zipline.jpg" alt="Зиплайн на Самуи" loading="lazy">
+              <picture><source srcset="images/tour-zipline.webp" type="image/webp"><img src="images/tour-zipline.jpg" alt="Зиплайн — экстрим-экскурсия на Самуи" loading="lazy"></picture>
             </div>
             <div class="tour__header">
               <h3 class="tour__title" data-ru="Зиплайн" data-en="Zipline">Зиплайн</h3>
@@ -413,7 +473,7 @@
 
           <article class="tour fade-in">
             <div class="tour__img">
-              <img src="images/tour-elephants.jpg" alt="Заповедник слонов на Самуи" loading="lazy">
+              <picture><source srcset="images/tour-elephants.webp" type="image/webp"><img src="images/tour-elephants.jpg" alt="Экскурсия к слонам на Самуи" loading="lazy"></picture>
             </div>
             <div class="tour__header">
               <h3 class="tour__title" data-ru="Заповедники со слонами" data-en="Elephant Sanctuary">Заповедники со слонами</h3>
@@ -432,7 +492,7 @@
 
           <article class="tour fade-in">
             <div class="tour__img">
-              <img src="images/tour-vip-private.jpg" alt="Приватная экскурсия по Самуи" loading="lazy">
+              <picture><source srcset="images/tour-vip-private.webp" type="image/webp"><img src="images/tour-vip-private.jpg" alt="VIP приватная экскурсия на Самуи" loading="lazy"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--dive" data-ru="Приватный" data-en="Private">Приватный</span>
@@ -452,7 +512,7 @@
 
           <article class="tour fade-in">
             <div class="tour__img">
-              <img src="images/tour-samui-cooking.jpg" alt="Тайские специи для кулинарного мастер-класса" loading="lazy">
+              <picture><source srcset="images/tour-samui-cooking.webp" type="image/webp"><img src="images/tour-samui-cooking.jpg" alt="Кулинарный мастер-класс на Самуи" loading="lazy"></picture>
             </div>
             <div class="tour__header">
               <h3 class="tour__title" data-ru="Обзорная экскурсия «Самуи — кулинария»" data-en="Samui Culture Tour">Обзорная экскурсия «Самуи — кулинария»</h3>
@@ -504,7 +564,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <img src="images/logo.jpg" alt="Poseidon" class="footer__logo">
+        <img src="images/logo.jpg" alt="Poseidon Diving Center — логотип" class="footer__logo">
         <div>
           <div class="logo-text">POSEIDON</div>
           <div class="footer__tagline" data-ru="Дайвинг центр • Самуи • ОАЭ" data-en="Diving Center • Samui • UAE">Дайвинг центр • Самуи • ОАЭ</div>
@@ -523,6 +583,6 @@
       <div class="footer__copy">&copy; 2026 Poseidon Diving Center</div>
     </div>
   </footer>
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>

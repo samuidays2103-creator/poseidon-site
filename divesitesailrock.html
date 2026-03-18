@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -39,12 +39,45 @@
   <meta property="og:image" content="https://www.poseidon.pro/images/sail-rock.jpg">
   <meta property="og:url" content="https://www.poseidon.pro/divesitesailrock">
   <meta property="og:locale" content="ru_RU">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Poseidon",
+      "item": "https://www.poseidon.pro/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Ко Самуи",
+      "item": "https://www.poseidon.pro/samui.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Дайв-сайты",
+      "item": "https://www.poseidon.pro/divesite.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Sail Rock",
+      "item": "https://www.poseidon.pro/divesitesailrock"
+    }
+  ]
+}
+  </script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="./" class="header__logo">
-        <img src="images/logo.jpg" alt="Poseidon" class="logo-img">
+        <img src="images/logo.jpg" alt="Poseidon Diving Center — логотип" class="logo-img">
         <span class="logo-text">POSEIDON</span>
       </a>
       <nav class="header__nav" id="nav">
@@ -63,7 +96,8 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><div class="container"><a href="./" data-ru="Главная" data-en="Home">Главная</a> <span class="breadcrumb__sep">/</span> <a href="samui.html" data-ru="Ко Самуи" data-en="Koh Samui">Ко Самуи</a> <span class="breadcrumb__sep">/</span> <a href="divesite.html" data-ru="Дайв-сайты" data-en="Dive Sites">Дайв-сайты</a> <span class="breadcrumb__sep">/</span> <span data-ru="Sail Rock" data-en="Sail Rock">Sail Rock</span></div></nav>
     <!-- HERO -->
     <section class="page-hero page-hero--samui">
       <div class="page-hero__overlay"></div>
@@ -83,7 +117,7 @@
       <div class="container">
         <div class="content-block">
         <div style="text-align:center;margin-bottom:2rem;">
-          <img src="images/sail-rock.jpg" alt="Sail Rock (Hin Bai) — massive granite pinnacle rising from the sea" style="max-width:100%;border-radius:16px;" class="fade-in" loading="lazy">
+          <picture><source srcset="images/sail-rock.webp" type="image/webp"><img src="images/sail-rock.jpg" alt="Sail Rock — лучший дайв-сайт Сиамского залива" style="max-width:100%;border-radius:16px;" class="fade-in" loading="lazy"></picture>
         </div>
         <h2 class="section__title fade-in" data-ru="Sail Rock (Hin Bai) — обзор" data-en="Sail Rock (Hin Bai) — Overview">Sail Rock (Hin Bai) — обзор</h2>
         <p class="section__subtitle fade-in"  data-ru="Sail Rock, или Хин Бай (หินใบ), — это массивная гранитная скала-пиннакл, расположенная в открытом море между островами Ко Панган и Ко Тао. Скала поднимается с глубины 40 метров и выступает примерно на 15 метров над поверхностью воды, напоминая парус — отсюда и название. Это безусловно лучший и самый знаменитый дайв-сайт во всём Сиамском заливе, привлекающий дайверов со всего мира." data-en="Sail Rock, or Hin Bai (หินใบ), is a massive granite pinnacle located in the open sea between Koh Phangan and Koh Tao islands. The rock rises from 40 meters depth and protrudes approximately 15 meters above the water surface, resembling a sail — hence the name. This is undoubtedly the best and most famous dive site in the entire Gulf of Thailand, attracting divers from around the world.">Sail Rock, или Хин Бай (หินใบ), — это массивная гранитная скала-пиннакл, расположенная в открытом море между островами Ко Панган и Ко Тао. Скала поднимается с глубины 40 метров и выступает примерно на 15 метров над поверхностью воды, напоминая парус — отсюда и название. Это безусловно лучший и самый знаменитый дайв-сайт во всём Сиамском заливе, привлекающий дайверов со всего мира.</p>
@@ -134,7 +168,7 @@
     <section class="section section--dark" id="chimney">
       <div class="container">
         <div style="text-align:center;margin-bottom:2rem;">
-          <img src="images/sail-rock.jpg" alt="Sail Rock Chimney дайвинг" loading="lazy" style="max-width:100%;border-radius:16px;">
+          <picture><source srcset="images/sail-rock.webp" type="image/webp"><img src="images/sail-rock.jpg" alt="Sail Rock — лучший дайв-сайт Сиамского залива" loading="lazy" style="max-width:100%;border-radius:16px;"></picture>
         </div>
         <h2 class="section__title fade-in" data-ru="Камин (The Chimney) — визитная карточка Sail Rock" data-en="The Chimney — Sail Rock's Signature Feature">Камин (The Chimney) — визитная карточка Sail Rock</h2>
         <p class="section__subtitle fade-in" data-ru="Камин — это уникальная вертикальная расщелина внутри скалы, проходящая насквозь от глубины примерно 18 метров до 5 метров. Это один из самых знаменитых swim-through в Юго-Восточной Азии и главная причина, по которой дайверы приезжают на Sail Rock снова и снова." data-en="The Chimney is a unique vertical crevice running through the rock from approximately 18 meters depth to 5 meters. It is one of the most famous swim-throughs in Southeast Asia and the primary reason divers return to Sail Rock again and again.">Камин — это уникальная вертикальная расщелина внутри скалы, проходящая насквозь от глубины примерно 18 метров до 5 метров. Это один из самых знаменитых swim-through в Юго-Восточной Азии и главная причина, по которой дайверы приезжают на Sail Rock снова и снова.</p>
@@ -187,7 +221,7 @@
 
         <div class="tour-grid">
           <article class="tour fade-in">
-            <img src="images/tour-sailrock-whaleshark.jpg" alt="Whale shark at Sail Rock" style="width:100%;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/tour-sailrock-whaleshark.webp" type="image/webp"><img src="images/tour-sailrock-whaleshark.jpg" alt="Китовая акула у Sail Rock" style="width:100%;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <span class="tour__badge tour__badge--hot" data-ru="Сезон: мар–сен" data-en="Season: Mar–Sep">Сезон: мар–сен</span>
               <h3 class="tour__title" data-ru="Китовые акулы" data-en="Whale Sharks">Китовые акулы</h3>
@@ -201,7 +235,7 @@
           </article>
 
           <article class="tour fade-in">
-            <img src="images/barracuda-tornado.jpg" alt="Barracuda tornado at Sail Rock" style="width:100%;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/barracuda-tornado.webp" type="image/webp"><img src="images/barracuda-tornado.jpg" alt="Торнадо барракуд — подводная фотография" style="width:100%;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <span class="tour__badge tour__badge--dive" data-ru="Зрелище" data-en="Spectacle">Зрелище</span>
               <h3 class="tour__title" data-ru="Торнадо шевронных барракуд" data-en="Chevron Barracuda Tornadoes">Торнадо шевронных барракуд</h3>
@@ -214,7 +248,7 @@
           </article>
 
           <article class="tour fade-in">
-            <img src="images/batfish.jpg" alt="Batfish at Sail Rock" style="width:100%;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/batfish.webp" type="image/webp"><img src="images/batfish.jpg" alt="Рыба-бабочка — дайвинг в Фуджейре, ОАЭ" style="width:100%;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <span class="tour__badge tour__badge--unique" data-ru="Резиденты" data-en="Residents">Резиденты</span>
               <h3 class="tour__title" data-ru="Гигантские групперы и бат-фиши" data-en="Giant Groupers and Batfish">Гигантские групперы и бат-фиши</h3>
@@ -229,7 +263,7 @@
           </article>
 
           <article class="tour fade-in">
-            <img src="images/triggerfish.jpg" alt="Triggerfish at Sail Rock coral reef" style="width:100%;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/triggerfish.webp" type="image/webp"><img src="images/triggerfish.jpg" alt="Тропическая рыба-триггер — дайвинг в ОАЭ" style="width:100%;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <h3 class="tour__title" data-ru="Кораллы и морские веера" data-en="Corals and Sea Fans">Кораллы и морские веера</h3>
             </div>
@@ -251,7 +285,7 @@
         <p class="section__subtitle fade-in" data-ru="Мы организуем регулярные поездки на Sail Rock из Ко Самуи. Выезд утром, возвращение к вечеру. Всё включено: трансфер, катер, снаряжение, обед, инструктор." data-en="We organize regular day trips to Sail Rock from Koh Samui. Morning departure, evening return. All inclusive: transfer, boat, equipment, lunch, instructor.">Мы организуем регулярные поездки на Sail Rock из Ко Самуи. Выезд утром, возвращение к вечеру. Всё включено: трансфер, катер, снаряжение, обед, инструктор.</p>
 
         <div style="text-align:center;margin-bottom:2rem;">
-          <img src="images/sail-rock-map.jpg" alt="Sail Rock dive site map" style="max-width:100%;border-radius:16px;" class="fade-in" loading="lazy">
+          <picture><source srcset="images/sail-rock-map.webp" type="image/webp"><img src="images/sail-rock-map.jpg" alt="Карта расположения Sail Rock" style="max-width:100%;border-radius:16px;" class="fade-in" loading="lazy"></picture>
         </div>
 
         <div class="tour-grid">
@@ -354,7 +388,7 @@
         <h2 class="section__title fade-in" data-ru="Требования и уровень подготовки" data-en="Requirements and Skill Level">Требования и уровень подготовки</h2>
 
         <div style="text-align:center;margin-bottom:2rem;">
-          <img src="images/sail-rock-certified.jpg" alt="Certified divers at Sail Rock" style="max-width:100%;border-radius:16px;" class="fade-in" loading="lazy">
+          <picture><source srcset="images/sail-rock-certified.webp" type="image/webp"><img src="images/sail-rock-certified.jpg" alt="Сертифицированный дайвер у Sail Rock" style="max-width:100%;border-radius:16px;" class="fade-in" loading="lazy"></picture>
         </div>
 
         <div class="tour-grid">
@@ -433,7 +467,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <img src="images/logo.jpg" alt="Poseidon" class="footer__logo">
+        <img src="images/logo.jpg" alt="Poseidon Diving Center — логотип" class="footer__logo">
         <div>
           <div class="logo-text">POSEIDON</div>
           <div class="footer__tagline" data-ru="Дайвинг центр • Самуи • ОАЭ" data-en="Diving Center • Samui • UAE">Дайвинг центр • Самуи • ОАЭ</div>
@@ -454,6 +488,6 @@
       <div class="footer__copy">&copy; 2026 Poseidon Diving Center</div>
     </div>
   </footer>
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>

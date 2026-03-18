@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -64,12 +64,39 @@
   <meta property="og:image" content="https://www.poseidon.pro/images/logo.jpg">
   <meta property="og:url" content="https://www.poseidon.pro/diving-ko-tao">
   <meta property="og:locale" content="ru_RU">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Poseidon",
+      "item": "https://www.poseidon.pro/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Ко Самуи",
+      "item": "https://www.poseidon.pro/samui.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Дайвинг Ко Тао",
+      "item": "https://www.poseidon.pro/diving-ko-tao"
+    }
+  ]
+}
+  </script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="./" class="header__logo">
-        <img src="images/logo.jpg" alt="Poseidon" class="logo-img">
+        <img src="images/logo.jpg" alt="Poseidon Diving Center — логотип" class="logo-img">
         <span class="logo-text">POSEIDON</span>
       </a>
       <nav class="header__nav" id="nav">
@@ -88,7 +115,8 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><div class="container"><a href="./" data-ru="Главная" data-en="Home">Главная</a> <span class="breadcrumb__sep">/</span> <a href="samui.html" data-ru="Ко Самуи" data-en="Koh Samui">Ко Самуи</a> <span class="breadcrumb__sep">/</span> <span data-ru="Дайвинг Ко Тао" data-en="Diving Koh Tao">Дайвинг Ко Тао</span></div></nav>
     <!-- HERO -->
     <section class="page-hero page-hero--samui">
       <div class="page-hero__overlay"></div>
@@ -108,7 +136,7 @@
       <div class="container">
         <div class="content-block">
         <div style="text-align:center;margin-bottom:2rem;">
-          <img src="images/divers-turtle.jpg" alt="Divers swimming with sea turtle at Koh Tao" style="max-width:100%;border-radius:16px;" class="fade-in" loading="lazy">
+          <picture><source srcset="images/divers-turtle.webp" type="image/webp"><img src="images/divers-turtle.jpg" alt="Дайверы с морской черепахой на Ко Самуи" style="max-width:100%;border-radius:16px;" class="fade-in" loading="lazy"></picture>
         </div>
         <h2 class="section__title fade-in" data-ru="Почему Ко Тао — мечта дайвера" data-en="Why Koh Tao is a diver's dream">Почему Ко Тао — мечта дайвера</h2>
         <p class="section__subtitle fade-in" data-ru="Ко Тао (Черепаший остров) — один из самых популярных дайвинг-направлений в мире. Этот небольшой остров в Сиамском заливе окружён коралловыми рифами, подводными пиннаклами и скалистыми образованиями, которые привлекают невероятное разнообразие морской жизни. Здесь обучается больше дайверов, чем в любом другом месте на планете. С Ко Самуи до Ко Тао можно добраться на скоростном катере за 1.5-2 часа, что позволяет совершить полноценный дайв-трип за один день." data-en="Koh Tao (Turtle Island) is one of the most popular diving destinations in the world. This small island in the Gulf of Thailand is surrounded by coral reefs, underwater pinnacles, and rock formations that attract an incredible diversity of marine life. More divers are certified here than anywhere else on the planet. From Koh Samui, you can reach Koh Tao by speedboat in 1.5-2 hours, allowing a full dive trip in a single day.">Ко Тао (Черепаший остров) — один из самых популярных дайвинг-направлений в мире. Этот небольшой остров в Сиамском заливе окружён коралловыми рифами, подводными пиннаклами и скалистыми образованиями, которые привлекают невероятное разнообразие морской жизни. Здесь обучается больше дайверов, чем в любом другом месте на планете. С Ко Самуи до Ко Тао можно добраться на скоростном катере за 1.5-2 часа, что позволяет совершить полноценный дайв-трип за один день.</p>
@@ -167,7 +195,7 @@
         <div class="tour-grid">
 
           <article class="tour fade-in">
-            <img src="images/chumphon-pinnacle.jpg" alt="Chumphon Pinnacle underwater" style="width:100%;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/chumphon-pinnacle.webp" type="image/webp"><img src="images/chumphon-pinnacle.jpg" alt="Chumphon Pinnacle — глубоководный дайв-сайт" style="width:100%;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <span class="tour__badge tour__badge--hot" data-ru="Топ-сайт" data-en="Top site">Топ-сайт</span>
               <h3 class="tour__title">Chumphon Pinnacle</h3>
@@ -181,7 +209,7 @@
           </article>
 
           <article class="tour fade-in">
-            <img src="images/southwest-pinnacle.jpg" alt="Southwest Pinnacle dive site" style="width:100%;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/southwest-pinnacle.webp" type="image/webp"><img src="images/southwest-pinnacle.jpg" alt="Southwest Pinnacle — дайв-сайт Ко Тао" style="width:100%;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <span class="tour__badge tour__badge--dive" data-ru="Дайвинг" data-en="Diving">Дайвинг</span>
               <h3 class="tour__title">Southwest Pinnacle</h3>
@@ -195,7 +223,7 @@
           </article>
 
           <article class="tour fade-in">
-            <img src="images/white-rock.jpg" alt="White Rock dive site Koh Tao" style="width:100%;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/white-rock.webp" type="image/webp"><img src="images/white-rock.jpg" alt="White Rock — коралловый риф Ко Тао" style="width:100%;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <span class="tour__badge tour__badge--snork" data-ru="Для всех" data-en="All levels">Для всех</span>
               <h3 class="tour__title">White Rock (Hin Khao)</h3>
@@ -210,7 +238,7 @@
           </article>
 
           <article class="tour fade-in">
-            <img src="images/twins.jpg" alt="Twins dive site — Nang Yuan Pinnacle" style="width:100%;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/twins.webp" type="image/webp"><img src="images/twins.jpg" alt="Twins — парные скалы для дайвинга" style="width:100%;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <span class="tour__badge tour__badge--unique" data-ru="Уникальный" data-en="Unique">Уникальный</span>
               <h3 class="tour__title">Twins (Nang Yuan Pinnacle)</h3>
@@ -225,7 +253,7 @@
           </article>
 
           <article class="tour fade-in">
-            <img src="images/japanese-gardens.jpg" alt="Japanese Garden coral reef at Nang Yuan" style="width:100%;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/japanese-gardens.webp" type="image/webp"><img src="images/japanese-gardens.jpg" alt="Japanese Gardens — подводный сад Ко Тао" style="width:100%;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <span class="tour__badge tour__badge--snork" data-ru="Красивый" data-en="Beautiful">Красивый</span>
               <h3 class="tour__title">Japanese Garden</h3>
@@ -239,7 +267,7 @@
           </article>
 
           <article class="tour fade-in">
-            <img src="images/shark-island.jpg" alt="Shark Island dive site Koh Tao" style="width:100%;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/shark-island.webp" type="image/webp"><img src="images/shark-island.jpg" alt="Shark Island — дайвинг у острова акул" style="width:100%;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <span class="tour__badge tour__badge--dive" data-ru="Дайвинг" data-en="Diving">Дайвинг</span>
               <h3 class="tour__title">Shark Island (Hin Pae)</h3>
@@ -265,7 +293,7 @@
         <div class="tour-grid">
 
           <article class="tour fade-in">
-            <img src="images/tour-sailrock-whaleshark.jpg" alt="Whale shark at Koh Tao" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/tour-sailrock-whaleshark.webp" type="image/webp"><img src="images/tour-sailrock-whaleshark.jpg" alt="Китовая акула у Sail Rock" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <h3 class="tour__title" data-ru="Китовые акулы" data-en="Whale sharks">Китовые акулы</h3>
             </div>
@@ -277,7 +305,7 @@
           </article>
 
           <article class="tour fade-in">
-            <img src="images/turtle-solo.jpg" alt="Sea turtle at Koh Tao reef" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/turtle-solo.webp" type="image/webp"><img src="images/turtle-solo.jpg" alt="Зелёная морская черепаха — дайвинг" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <h3 class="tour__title" data-ru="Морские черепахи" data-en="Sea turtles">Морские черепахи</h3>
             </div>
@@ -289,7 +317,7 @@
           </article>
 
           <article class="tour fade-in">
-            <img src="images/batfish.jpg" alt="Batfish school at Koh Tao" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/batfish.webp" type="image/webp"><img src="images/batfish.jpg" alt="Рыба-бабочка — дайвинг в Фуджейре, ОАЭ" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <h3 class="tour__title" data-ru="Батфиши и стаи рыб" data-en="Batfish & fish schools">Батфиши и стаи рыб</h3>
             </div>
@@ -301,7 +329,7 @@
           </article>
 
           <article class="tour fade-in">
-            <img src="images/tour-lionfish.jpg" alt="Lionfish at Koh Tao" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/tour-lionfish.webp" type="image/webp"><img src="images/tour-lionfish.jpg" alt="Крылатка — подводная жизнь Сиамского залива" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <h3 class="tour__title" data-ru="Крылатки и мурены" data-en="Lionfish & moray eels">Крылатки и мурены</h3>
             </div>
@@ -313,7 +341,7 @@
           </article>
 
           <article class="tour fade-in">
-            <img src="images/triggerfish.jpg" alt="Triggerfish at Koh Tao" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/triggerfish.webp" type="image/webp"><img src="images/triggerfish.jpg" alt="Тропическая рыба-триггер — дайвинг в ОАЭ" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <h3 class="tour__title" data-ru="Спинороги и рифовые рыбы" data-en="Triggerfish & reef fish">Спинороги и рифовые рыбы</h3>
             </div>
@@ -325,7 +353,7 @@
           </article>
 
           <article class="tour fade-in">
-            <img src="images/tour-diving-reef.jpg" alt="Trevally, groupers and snappers schooling at Koh Tao pinnacle" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy">
+            <picture><source srcset="images/tour-diving-reef.webp" type="image/webp"><img src="images/tour-diving-reef.jpg" alt="Рифовый дайвинг на Ко Самуи" style="width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:1rem;" loading="lazy"></picture>
             <div class="tour__header">
               <h3 class="tour__title" data-ru="Барракуды и тревалли" data-en="Barracuda & trevally">Барракуды и тревалли</h3>
             </div>
@@ -507,7 +535,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <img src="images/logo.jpg" alt="Poseidon" class="footer__logo">
+        <img src="images/logo.jpg" alt="Poseidon Diving Center — логотип" class="footer__logo">
         <div>
           <div class="logo-text">POSEIDON</div>
           <div class="footer__tagline" data-ru="Дайвинг центр • Самуи • ОАЭ" data-en="Diving Center • Samui • UAE">Дайвинг центр • Самуи • ОАЭ</div>
@@ -528,6 +556,6 @@
       <div class="footer__copy">&copy; 2026 Poseidon Diving Center</div>
     </div>
   </footer>
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>

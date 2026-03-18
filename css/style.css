@@ -34,7 +34,23 @@ body {
 img { max-width: 100%; height: auto; display: block; }
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
-.skip-link { position: absolute; top: -100%; }
+.skip-link {
+  position: absolute; top: -100%; left: 50%; transform: translateX(-50%);
+  background: var(--ocean); color: var(--deep); padding: 8px 24px;
+  border-radius: 0 0 var(--radius) var(--radius); font-weight: 700;
+  z-index: 200; transition: top 0.2s;
+}
+.skip-link:focus { top: 0; }
+
+/* ===== BREADCRUMBS ===== */
+.breadcrumb {
+  padding: 12px 0; font-size: 13px; color: var(--muted);
+  border-bottom: 1px solid var(--border); margin-top: 68px;
+}
+.breadcrumb a { color: var(--glow); transition: color var(--transition); }
+.breadcrumb a:hover { color: var(--aqua); }
+.breadcrumb__sep { margin: 0 6px; opacity: 0.4; }
+.breadcrumb span:last-child { color: var(--white); }
 
 .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
 
@@ -120,9 +136,13 @@ ul { list-style: none; }
 .hero-split__half:hover { flex: 1.15; }
 .hero-split__samui {
   background: url('../images/hero-turtle.jpg') center/cover no-repeat;
+  background: -webkit-image-set(url('../images/hero-turtle.webp') type('image/webp'), url('../images/hero-turtle.jpg') type('image/jpeg')) center/cover no-repeat;
+  background: image-set(url('../images/hero-turtle.webp') type('image/webp'), url('../images/hero-turtle.jpg') type('image/jpeg')) center/cover no-repeat;
 }
 .hero-split__uae {
   background: url('../images/triggerfish.jpg') center/cover no-repeat;
+  background: -webkit-image-set(url('../images/triggerfish.webp') type('image/webp'), url('../images/triggerfish.jpg') type('image/jpeg')) center/cover no-repeat;
+  background: image-set(url('../images/triggerfish.webp') type('image/webp'), url('../images/triggerfish.jpg') type('image/jpeg')) center/cover no-repeat;
 }
 .hero-split__overlay {
   position: absolute; inset: 0;
@@ -161,8 +181,14 @@ ul { list-style: none; }
   min-height: 70vh; display: flex; align-items: center;
   position: relative; overflow: hidden;
 }
-.page-hero--samui { background: url('../images/hero-ocean.jpg') center/cover no-repeat; }
-.page-hero--uae { background: url('../images/batfish.jpg') center/cover no-repeat; }
+.page-hero--samui {
+  background: url('../images/hero-ocean.jpg') center/cover no-repeat;
+  background: image-set(url('../images/hero-ocean.webp') type('image/webp'), url('../images/hero-ocean.jpg') type('image/jpeg')) center/cover no-repeat;
+}
+.page-hero--uae {
+  background: url('../images/batfish.jpg') center/cover no-repeat;
+  background: image-set(url('../images/batfish.webp') type('image/webp'), url('../images/batfish.jpg') type('image/jpeg')) center/cover no-repeat;
+}
 .page-hero__overlay {
   position: absolute; inset: 0;
   background: linear-gradient(180deg, rgba(6,13,31,0.5) 0%, rgba(6,13,31,0.7) 100%);
@@ -248,8 +274,14 @@ ul { list-style: none; }
 .destination__visual {
   height: 200px; position: relative;
 }
-.destination__visual--samui { background: url('../images/divers-turtle.jpg') center/cover no-repeat; }
-.destination__visual--uae { background: url('../images/dive-center.jpg') center/cover no-repeat; }
+.destination__visual--samui {
+  background: url('../images/divers-turtle.jpg') center/cover no-repeat;
+  background: image-set(url('../images/divers-turtle.webp') type('image/webp'), url('../images/divers-turtle.jpg') type('image/jpeg')) center/cover no-repeat;
+}
+.destination__visual--uae {
+  background: url('../images/dive-center.jpg') center/cover no-repeat;
+  background: image-set(url('../images/dive-center.webp') type('image/webp'), url('../images/dive-center.jpg') type('image/jpeg')) center/cover no-repeat;
+}
 .destination__overlay {
   position: absolute; inset: 0;
   background: radial-gradient(circle at 50% 80%, rgba(14,165,233,0.2) 0%, transparent 60%);
@@ -425,6 +457,18 @@ ul { list-style: none; }
   .hero-split { flex-direction: column; }
   .hero-split__half { min-height: 50vh; }
   .hero-split__center { display: none; }
+  .hero-split__samui {
+    background: url('../images/hero-turtle-768w.webp') center/cover no-repeat;
+  }
+  .hero-split__uae {
+    background: url('../images/triggerfish-768w.webp') center/cover no-repeat;
+  }
+  .page-hero--samui {
+    background: url('../images/hero-ocean-768w.webp') center/cover no-repeat;
+  }
+  .page-hero--uae {
+    background: url('../images/batfish-768w.webp') center/cover no-repeat;
+  }
 
   .features { grid-template-columns: repeat(2,1fr); }
   .cards, .tour-grid, .courses, .contacts { grid-template-columns: 1fr; }

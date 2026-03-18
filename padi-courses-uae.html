@@ -9,19 +9,46 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta property="og:type" content="website">
   <meta property="og:title" content="PADI курсы в ОАЭ — Poseidon UAE">
   <meta property="og:description" content="Обучение дайвингу в ОАЭ: от пробного погружения до Master Scuba Diver.">
   <meta property="og:image" content="https://www.poseidon.pro/images/logo.jpg">
   <meta property="og:url" content="https://www.poseidon.pro/padi-courses-uae">
   <meta property="og:locale" content="ru_RU">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Poseidon",
+      "item": "https://www.poseidon.pro/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "ОАЭ",
+      "item": "https://www.poseidon.pro/uae.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "PADI курсы",
+      "item": "https://www.poseidon.pro/padi-courses-uae"
+    }
+  ]
+}
+  </script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="./" class="header__logo">
-        <img src="images/logo.jpg" alt="Poseidon" class="logo-img">
+        <img src="images/logo.jpg" alt="Poseidon Diving Center — логотип" class="logo-img">
         <span class="logo-text">POSEIDON</span>
       </a>
       <nav class="header__nav" id="nav">
@@ -39,7 +66,8 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><div class="container"><a href="./" data-ru="Главная" data-en="Home">Главная</a> <span class="breadcrumb__sep">/</span> <a href="uae.html" data-ru="ОАЭ" data-en="UAE">ОАЭ</a> <span class="breadcrumb__sep">/</span> <span data-ru="PADI курсы" data-en="PADI Courses">PADI курсы</span></div></nav>
     <section class="page-hero page-hero--uae">
       <div class="page-hero__overlay"></div>
       <div class="container page-hero__content">
@@ -56,7 +84,7 @@
     <!-- CONFIDENCE BANNER -->
     <section class="section" style="padding-top:1rem;padding-bottom:0;">
       <div class="container" style="text-align:center;">
-        <img src="images/uae-confidence.png" alt="Confidence — Poseidon Diving" loading="lazy" style="max-width:180px;">
+        <picture><source srcset="images/uae-confidence.webp" type="image/webp"><img src="images/uae-confidence.png" alt="Уверенность под водой — обучение в ОАЭ" loading="lazy" style="max-width:180px;"></picture>
       </div>
     </section>
 
@@ -91,7 +119,7 @@
     <!-- PADI BANNER -->
     <section class="section" style="padding-top:1rem;padding-bottom:0;">
       <div class="container" style="text-align:center;">
-        <img src="images/padi-courses-banner.png" alt="PADI Courses" loading="lazy" style="max-width:100%;border-radius:16px;">
+        <picture><source srcset="images/padi-courses-banner.webp" type="image/webp"><img src="images/padi-courses-banner.png" alt="PADI курсы дайвинга — баннер" loading="lazy" style="max-width:100%;border-radius:16px;"></picture>
       </div>
     </section>
 
@@ -127,7 +155,7 @@
 
           <div class="course fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/uae-dsd-banner.jpg" alt="PADI Discover Scuba Diving" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/uae-dsd-banner.webp" type="image/webp"><img src="images/uae-dsd-banner.jpg" alt="Discover Scuba Diving в ОАЭ" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="course__level" data-ru="Знакомство" data-en="Introduction">Знакомство</div>
             <h3 class="course__title">Discover Scuba Diving</h3>
@@ -154,7 +182,7 @@
 
           <div class="course course--featured fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/open-water-diver.jpg" alt="PADI Open Water Diver" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/open-water-diver.webp" type="image/webp"><img src="images/open-water-diver.jpg" alt="Курс PADI Open Water Diver на Самуи" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="course__level" data-ru="Новичок" data-en="Beginner">Новичок</div>
             <h3 class="course__title">Open Water Diver</h3>
@@ -169,7 +197,7 @@
 
           <div class="course course--featured fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/sail-rock-certified.jpg" alt="PADI Advanced Open Water Diver" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/sail-rock-certified.webp" type="image/webp"><img src="images/sail-rock-certified.jpg" alt="Сертифицированный дайвер у Sail Rock" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="course__level" data-ru="Продвинутый" data-en="Advanced">Продвинутый</div>
             <h3 class="course__title">Advanced Open Water Diver</h3>
@@ -220,7 +248,7 @@
 
           <div class="course course--featured fade-in">
             <div style="text-align:center;margin-bottom:1rem;">
-              <img src="images/padi-chart.jpg" alt="PADI Certification Chart" loading="lazy" style="max-width:100%;border-radius:12px;">
+              <picture><source srcset="images/padi-chart.webp" type="image/webp"><img src="images/padi-chart.jpg" alt="Система курсов PADI — от новичка до инструктора" loading="lazy" style="max-width:100%;border-radius:12px;"></picture>
             </div>
             <div class="course__level" data-ru="Мастер" data-en="Master">Мастер</div>
             <h3 class="course__title">Master Scuba Diver</h3>
@@ -316,7 +344,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <img src="images/logo.jpg" alt="Poseidon" class="footer__logo">
+        <img src="images/logo.jpg" alt="Poseidon Diving Center — логотип" class="footer__logo">
         <div>
           <div class="logo-text">POSEIDON</div>
           <div class="footer__tagline" data-ru="Дайвинг центр • Самуи • ОАЭ" data-en="Diving Center • Samui • UAE">Дайвинг центр • Самуи • ОАЭ</div>
@@ -330,6 +358,6 @@
       <div class="footer__copy">&copy; 2026 Poseidon Diving Center</div>
     </div>
   </footer>
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>

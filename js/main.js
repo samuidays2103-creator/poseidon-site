@@ -1,7 +1,14 @@
-// === Sticky Header ===
+// === Sticky Header (debounced) ===
 const header = document.getElementById('header');
+let ticking = false;
 window.addEventListener('scroll', () => {
-  header.classList.toggle('header--scrolled', window.scrollY > 10);
+  if (!ticking) {
+    requestAnimationFrame(() => {
+      header.classList.toggle('header--scrolled', window.scrollY > 10);
+      ticking = false;
+    });
+    ticking = true;
+  }
 });
 
 // === Mobile Navigation (iOS Safari safe) ===
@@ -47,7 +54,14 @@ function applyLang(lang) {
 
   document.querySelectorAll('[data-ru][data-en]').forEach(el => {
     const text = el.getAttribute(`data-${lang}`);
-    if (text) el.innerHTML = text;
+    if (text) {
+      // Use innerHTML only for elements with HTML content (like <br>, <strong>)
+      if (text.includes('<')) {
+        el.innerHTML = text;
+      } else {
+        el.textContent = text;
+      }
+    }
   });
 }
 

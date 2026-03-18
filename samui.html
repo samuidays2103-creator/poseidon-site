@@ -9,19 +9,80 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Дайвинг на Ко Самуи — Poseidon Diving Center">
   <meta property="og:description" content="Дайв-туры на Нанг Юань, Ко Тао, Sail Rock. PADI-курсы от Discover Scuba до Divemaster. 15+ лет опыта.">
   <meta property="og:image" content="https://www.poseidon.pro/images/hero-samui.jpg">
   <meta property="og:url" content="https://www.poseidon.pro/samui">
   <meta property="og:locale" content="ru_RU">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Poseidon",
+      "item": "https://www.poseidon.pro/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Ко Самуи",
+      "item": "https://www.poseidon.pro/samui"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Когда лучший сезон для дайвинга на Самуи?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Лучший сезон — с марта по сентябрь: видимость 15-30 метров, спокойное море, температура воды 28-30°C. Дайвинг возможен круглый год."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Нужен ли опыт для первого погружения?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Нет! Программа Discover Scuba Diving позволяет попробовать дайвинг без сертификата. Инструктор проведёт брифинг и будет рядом под водой."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Что включено в стоимость дайв-тура?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Трансфер из отеля, снаряжение, 2 погружения, обед, напитки, страховка, сопровождение русскоязычного инструктора."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "С какого возраста можно нырять?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Discover Scuba Diving — с 10 лет. Bubblemaker (бассейн) — с 8 лет. Снорклинг — с любого возраста."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="./" class="header__logo">
-        <img src="images/logo.jpg" alt="Poseidon" class="logo-img">
+        <img src="images/logo.jpg" alt="Poseidon Diving Center — логотип" class="logo-img">
         <span class="logo-text">POSEIDON</span>
       </a>
       <nav class="header__nav" id="nav">
@@ -39,7 +100,8 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><div class="container"><a href="./" data-ru="Главная" data-en="Home">Главная</a> <span class="breadcrumb__sep">/</span> <span data-ru="Ко Самуи" data-en="Koh Samui">Ко Самуи</span></div></nav>
     <!-- HERO -->
     <section class="page-hero page-hero--samui">
       <div class="page-hero__overlay"></div>
@@ -63,7 +125,7 @@
 
           <article class="tour fade-in">
             <div class="tour__img">
-              <img src="images/nang-yuan-family.jpg" alt="Нанг Юань" loading="lazy">
+              <picture><source srcset="images/nang-yuan-family.webp" type="image/webp"><img src="images/nang-yuan-family.jpg" alt="Семейный дайвинг на Нанг Юань, Ко Тао" loading="lazy"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--hot" data-ru="Хит" data-en="Top">Хит</span>
@@ -86,7 +148,7 @@
 
           <article class="tour fade-in">
             <div class="tour__img">
-              <img src="images/tour-kotao-turtle.jpg" alt="Дайвинг на Ко Тао" loading="lazy">
+              <picture><source srcset="images/tour-kotao-turtle.webp" type="image/webp"><img src="images/tour-kotao-turtle.jpg" alt="Черепаха на Ко Тао — дайвинг тур" loading="lazy"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--dive" data-ru="Дайвинг" data-en="Diving">Дайвинг</span>
@@ -108,7 +170,7 @@
 
           <article class="tour fade-in">
             <div class="tour__img">
-              <img src="images/tour-sailrock-whaleshark.jpg" alt="Китовая акула на Sail Rock" loading="lazy">
+              <picture><source srcset="images/tour-sailrock-whaleshark.webp" type="image/webp"><img src="images/tour-sailrock-whaleshark.jpg" alt="Китовая акула у Sail Rock" loading="lazy"></picture>
             </div>
             <div class="tour__header">
               <span class="tour__badge tour__badge--unique" data-ru="Китовые акулы" data-en="Whale Sharks">Китовые акулы</span>
@@ -240,7 +302,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <img src="images/logo.jpg" alt="Poseidon" class="footer__logo">
+        <img src="images/logo.jpg" alt="Poseidon Diving Center — логотип" class="footer__logo">
         <div>
           <div class="logo-text">POSEIDON</div>
           <div class="footer__tagline" data-ru="Дайвинг центр • Самуи • ОАЭ" data-en="Diving Center • Samui • UAE">Дайвинг центр • Самуи • ОАЭ</div>
@@ -262,6 +324,6 @@
       <div class="footer__copy">&copy; 2026 Poseidon Diving Center</div>
     </div>
   </footer>
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>
