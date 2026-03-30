@@ -129,29 +129,29 @@
       var flagSvg='<svg width="20" height="26" viewBox="0 0 20 26"><line x1="3" y1="6" x2="3" y2="26" stroke="#fff" stroke-width="2"/><polygon points="3,2 19,7 3,12" fill="#ef4444" stroke="#b91c1c" stroke-width="0.5"/></svg>';
 
       var sites=[
-        {n:"Sail Rock",lat:9.9478,lng:99.9361,d:"5-35m",lvl:"Intermediate",url:"divesitesailrock.html",desc_ru:"Лучший дайв-сайт Сиамского залива. Chimney, китовые акулы",desc_en:"Best dive site in the Gulf. Chimney, whale sharks"},
-        {n:"Chumphon Pinnacle",lat:10.1147,lng:99.7267,d:"14-36m",lvl:"Advanced",url:"divesitechumphonpinnacle.html",desc_ru:"Самый знаменитый пиннакл Ко Тао. Китовые акулы, гигантские тревалли",desc_en:"Most famous Koh Tao pinnacle. Whale sharks, giant trevallies"},
-        {n:"Southwest Pinnacle",lat:10.0167,lng:99.7833,d:"5-26m",lvl:"Intermediate",url:"divesitesouthwestpinnacle.html",desc_ru:"Группа подводных скал. Барракуды, групперы, рифовые акулы",desc_en:"Group of underwater rocks. Barracudas, groupers, reef sharks"},
-        {n:"Green Rock",lat:10.1130,lng:99.8140,d:"5-25m",lvl:"Intermediate",url:"divesitegreenrock.html",desc_ru:"Пещеры и swim-through. Барракуды, групперы, мурены",desc_en:"Caves and swim-throughs. Barracudas, groupers, morays"},
-        {n:"Japanese Gardens",lat:10.1095,lng:99.8100,d:"5-12m",lvl:"Easy",url:"japanese-gardens.html",desc_ru:"Коралловый сад у Нанг Юань. Идеален для начинающих",desc_en:"Coral garden near Nang Yuan. Perfect for beginners"},
-        {n:"Twins",lat:10.1060,lng:99.8190,d:"5-18m",lvl:"Easy",url:"divesitetwins.html",desc_ru:"Два подводных пиннакла. Немо, ночной дайвинг",desc_en:"Two underwater pinnacles. Nemo, night diving"},
-        {n:"White Rock",lat:10.0667,lng:99.8083,d:"5-22m",lvl:"Easy",url:"divesitewhiterock.html",desc_ru:"Один из крупнейших сайтов Ко Тао. Черепахи, ночной дайвинг",desc_en:"One of Koh Tao's largest sites. Turtles, night diving"},
-        {n:"Shark Island",lat:10.0300,lng:99.8380,d:"5-24m",lvl:"Intermediate",url:"divesitesharkisland.html",desc_ru:"Сильные течения, скаты, рифовые акулы",desc_en:"Strong currents, rays, reef sharks"},
-        {n:"HTMS Sattakut",lat:10.0583,lng:99.8028,d:"18-30m",lvl:"Advanced",url:"divesitehtmssattakut.html",desc_ru:"Затонувший военный корабль. Длина 49м",desc_en:"Sunken warship wreck. 49m long"},
-        {n:"Lighthouse",lat:10.0860,lng:99.8470,d:"5-24m",lvl:"Easy",url:"divesitelighthouse.html",desc_ru:"Красивые кораллы, морские коньки, трубкозубы",desc_en:"Beautiful corals, seahorses, pipefish"},
-        {n:"Hin Wong Pinnacle",lat:10.0750,lng:99.8472,d:"5-22m",lvl:"Intermediate",url:"divesitehinwongpinnacle.html",desc_ru:"Подводная скала с мягкими кораллами",desc_en:"Underwater rock with soft corals"},
-        {n:"Laem Thian",lat:10.0639,lng:99.8444,d:"5-18m",lvl:"Easy",url:"divesitelaemthian.html",desc_ru:"Макро-дайвинг. Морские коньки, голожаберники",desc_en:"Macro diving. Seahorses, nudibranchs"},
-        {n:"Tanote Bay",lat:10.0556,lng:99.8417,d:"5-14m",lvl:"Easy",url:"divesitetanotebay.html",desc_ru:"Мелководная бухта. Черепахи, рыбы-клоуны",desc_en:"Shallow bay. Turtles, clownfish"},
-        {n:"Hin Ngam / Aow Leuk",lat:10.0417,lng:99.8389,d:"5-18m",lvl:"Easy",url:"divesitehinngamaowleuk.html",desc_ru:"Гранитные валуны, снорклинг и дайвинг",desc_en:"Granite boulders, snorkeling and diving"},
-        {n:"King Kong",lat:10.0361,lng:99.8361,d:"5-14m",lvl:"Easy",url:"divesitekingkong.html",desc_ru:"Валуны и кораллы. Барракуды, тригерфиш",desc_en:"Boulders and corals. Barracudas, triggerfish"},
-        {n:"Mango Bay",lat:10.0950,lng:99.8350,d:"3-16m",lvl:"Easy",url:"divesitemangobay.html",desc_ru:"Тихая бухта для обучения. Черепахи",desc_en:"Calm bay for training. Turtles"},
-        {n:"Red Rock",lat:10.1010,lng:99.8040,d:"5-20m",lvl:"Easy",url:"divesiteredrock.html",desc_ru:"Красные кораллы, черепахи, мурены",desc_en:"Red corals, turtles, morays"},
-        {n:"Hin Pee Wee",lat:10.0806,lng:99.8000,d:"5-20m",lvl:"Easy",url:"divesitehinpeewee.html",desc_ru:"Маленький пиннакл, хорош для обучения",desc_en:"Small pinnacle, good for training"},
-        {n:"3 Rocks / Pottery",lat:10.0480,lng:99.7972,d:"5-18m",lvl:"Easy",url:"divesitepottery3rocks.html",desc_ru:"Три подводные скалы. Осьминоги, нудибранчи",desc_en:"Three underwater rocks. Octopus, nudibranchs"},
-        {n:"Koh Yippon",lat:10.0444,lng:99.7917,d:"5-16m",lvl:"Easy",url:"divesitekohyippon.html",desc_ru:"Маленький остров с кораллами",desc_en:"Small island with corals"},
-        {n:"Buoyancy World",lat:10.1030,lng:99.8210,d:"6-12m",lvl:"Easy",url:"divesitebuoyancyworld.html",desc_ru:"Тренировочная площадка для плавучести",desc_en:"Buoyancy training ground"},
-        {n:"Biorock",lat:10.0889,lng:99.8250,d:"5-10m",lvl:"Easy",url:"divesitebiorock.html",desc_ru:"Искусственный риф, проект восстановления кораллов",desc_en:"Artificial reef, coral restoration project"},
-        {n:"No Name Pinnacle",lat:10.1040,lng:99.8250,d:"8-20m",lvl:"Intermediate",url:"divesitenonomepinnacle.html",desc_ru:"Скрытый пиннакл рядом с Twins",desc_en:"Hidden pinnacle near Twins"}
+        {n:"Sail Rock",lat:9.9478,lng:99.9361,d:"5-35m",lvl:"Intermediate",url:"divesitesailrock.html",desc_ru:"Лучший дайв-сайт Сиамского залива. Дымоход, китовые акулы",desc_en:"Best dive site in the Gulf. Chimney, whale sharks"},
+        {n:"Chumphon Pinnacle",lat:10.1725,lng:99.7787,d:"14-36m",lvl:"Advanced",url:"divesitechumphonpinnacle.html",desc_ru:"Самый знаменитый пиннакл Ко Тао. Китовые акулы, гигантские тревалли",desc_en:"Most famous Koh Tao pinnacle. Whale sharks, giant trevallies"},
+        {n:"Southwest Pinnacle",lat:10.0530,lng:99.7880,d:"5-26m",lvl:"Intermediate",url:"divesitesouthwestpinnacle.html",desc_ru:"Группа подводных скал. Барракуды, групперы, рифовые акулы",desc_en:"Group of underwater rocks. Barracudas, groupers, reef sharks"},
+        {n:"Green Rock",lat:10.1257,lng:99.8103,d:"5-25m",lvl:"Intermediate",url:"divesitegreenrock.html",desc_ru:"Пещеры и swim-through. Барракуды, групперы, мурены",desc_en:"Caves and swim-throughs. Barracudas, groupers, morays"},
+        {n:"Japanese Gardens",lat:10.1187,lng:99.8152,d:"5-12m",lvl:"Easy",url:"japanese-gardens.html",desc_ru:"Коралловый сад у Нанг Юань. Идеален для начинающих",desc_en:"Coral garden near Nang Yuan. Perfect for beginners"},
+        {n:"Twins",lat:10.1150,lng:99.8220,d:"5-18m",lvl:"Easy",url:"divesitetwins.html",desc_ru:"Два подводных пиннакла. Немо, ночной дайвинг",desc_en:"Two underwater pinnacles. Nemo, night diving"},
+        {n:"White Rock",lat:10.1081,lng:99.8138,d:"5-22m",lvl:"Easy",url:"divesitewhiterock.html",desc_ru:"Один из крупнейших сайтов Ко Тао. Черепахи, ночной дайвинг",desc_en:"One of Koh Tao's largest sites. Turtles, night diving"},
+        {n:"Shark Island",lat:10.0580,lng:99.8500,d:"5-24m",lvl:"Intermediate",url:"divesitesharkisland.html",desc_ru:"Сильные течения, скаты, рифовые акулы",desc_en:"Strong currents, rays, reef sharks"},
+        {n:"HTMS Sattakut",lat:10.0920,lng:99.8060,d:"18-30m",lvl:"Advanced",url:"divesitehtmssattakut.html",desc_ru:"Затонувший военный корабль. Длина 49м",desc_en:"Sunken warship wreck. 49m long"},
+        {n:"Lighthouse",lat:10.1211,lng:99.8449,d:"5-24m",lvl:"Easy",url:"divesitelighthouse.html",desc_ru:"Красивые кораллы, морские коньки, трубкозубы",desc_en:"Beautiful corals, seahorses, pipefish"},
+        {n:"Hin Wong Pinnacle",lat:10.1050,lng:99.8530,d:"5-22m",lvl:"Intermediate",url:"divesitehinwongpinnacle.html",desc_ru:"Подводная скала с мягкими кораллами",desc_en:"Underwater rock with soft corals"},
+        {n:"Laem Thian",lat:10.0920,lng:99.8510,d:"5-18m",lvl:"Easy",url:"divesitelaemthian.html",desc_ru:"Макро-дайвинг. Морские коньки, голожаберники",desc_en:"Macro diving. Seahorses, nudibranchs"},
+        {n:"Tanote Bay",lat:10.0830,lng:99.8500,d:"5-14m",lvl:"Easy",url:"divesitetanotebay.html",desc_ru:"Мелководная бухта. Черепахи, рыбы-клоуны",desc_en:"Shallow bay. Turtles, clownfish"},
+        {n:"Hin Ngam / Aow Leuk",lat:10.0664,lng:99.8415,d:"5-18m",lvl:"Easy",url:"divesitehinngamaowleuk.html",desc_ru:"Гранитные валуны, снорклинг и дайвинг",desc_en:"Granite boulders, snorkeling and diving"},
+        {n:"King Kong",lat:10.0620,lng:99.8460,d:"5-14m",lvl:"Easy",url:"divesitekingkong.html",desc_ru:"Валуны и кораллы. Барракуды, тригерфиш",desc_en:"Boulders and corals. Barracudas, triggerfish"},
+        {n:"Mango Bay",lat:10.1210,lng:99.8348,d:"3-16m",lvl:"Easy",url:"divesitemangobay.html",desc_ru:"Тихая бухта для обучения. Черепахи",desc_en:"Calm bay for training. Turtles"},
+        {n:"Red Rock",lat:10.0624,lng:99.8451,d:"5-20m",lvl:"Easy",url:"divesiteredrock.html",desc_ru:"Красные кораллы, черепахи, мурены",desc_en:"Red corals, turtles, morays"},
+        {n:"Hin Pee Wee",lat:10.1050,lng:99.8050,d:"5-20m",lvl:"Easy",url:"divesitehinpeewee.html",desc_ru:"Маленький пиннакл, хорош для обучения",desc_en:"Small pinnacle, good for training"},
+        {n:"3 Rocks / Pottery",lat:10.0700,lng:99.8100,d:"5-18m",lvl:"Easy",url:"divesitepottery3rocks.html",desc_ru:"Три подводные скалы. Осьминоги, нудибранчи",desc_en:"Three underwater rocks. Octopus, nudibranchs"},
+        {n:"Koh Yippon",lat:10.0650,lng:99.8050,d:"5-16m",lvl:"Easy",url:"divesitekohyippon.html",desc_ru:"Маленький остров с кораллами",desc_en:"Small island with corals"},
+        {n:"Buoyancy World",lat:10.1130,lng:99.8230,d:"6-12m",lvl:"Easy",url:"divesitebuoyancyworld.html",desc_ru:"Тренировочная площадка для плавучести",desc_en:"Buoyancy training ground"},
+        {n:"Biorock",lat:10.1100,lng:99.8280,d:"5-10m",lvl:"Easy",url:"divesitebiorock.html",desc_ru:"Искусственный риф, проект восстановления кораллов",desc_en:"Artificial reef, coral restoration project"},
+        {n:"No Name Pinnacle",lat:10.1120,lng:99.8260,d:"8-20m",lvl:"Intermediate",url:"divesitenonomepinnacle.html",desc_ru:"Скрытый пиннакл рядом с Twins",desc_en:"Hidden pinnacle near Twins"}
       ];
 
       var lang=localStorage.getItem('poseidon-lang')||'ru';
@@ -163,7 +163,7 @@
         L.marker([s.lat,s.lng],{icon:icon}).addTo(map).bindPopup(popup);
       });
 
-      map.fitBounds([[9.94,99.72],[10.12,99.86]],{padding:[30,30]});
+      map.fitBounds([[9.94,99.72],[10.18,99.86]],{padding:[30,30]});
     })();
     </script>
 
