@@ -135,9 +135,9 @@ ul { list-style: none; }
 }
 .hero-split__half:hover { flex: 1.15; }
 .hero-split__samui {
-  background: url('../images/hero-turtle.jpg') center/cover no-repeat;
-  background: -webkit-image-set(url('../images/hero-turtle.webp') type('image/webp'), url('../images/hero-turtle.jpg') type('image/jpeg')) center/cover no-repeat;
-  background: image-set(url('../images/hero-turtle.webp') type('image/webp'), url('../images/hero-turtle.jpg') type('image/jpeg')) center/cover no-repeat;
+  background: url('../images/barracuda-tornado.jpg') center/cover no-repeat;
+  background: -webkit-image-set(url('../images/barracuda-tornado.webp') type('image/webp'), url('../images/barracuda-tornado.jpg') type('image/jpeg')) center/cover no-repeat;
+  background: image-set(url('../images/barracuda-tornado.webp') type('image/webp'), url('../images/barracuda-tornado.jpg') type('image/jpeg')) center/cover no-repeat;
 }
 .hero-split__uae {
   background: url('../images/triggerfish.jpg') center/cover no-repeat;
@@ -275,8 +275,8 @@ ul { list-style: none; }
   height: 200px; position: relative;
 }
 .destination__visual--samui {
-  background: url('../images/divers-turtle.jpg') center/cover no-repeat;
-  background: image-set(url('../images/divers-turtle.webp') type('image/webp'), url('../images/divers-turtle.jpg') type('image/jpeg')) center/cover no-repeat;
+  background: url('../images/tour-diving-reef.jpg') center/cover no-repeat;
+  background: image-set(url('../images/tour-diving-reef.webp') type('image/webp'), url('../images/tour-diving-reef.jpg') type('image/jpeg')) center/cover no-repeat;
 }
 .destination__visual--uae {
   background: url('../images/dive-center.jpg') center/cover no-repeat;
@@ -458,7 +458,7 @@ ul { list-style: none; }
   .hero-split__half { min-height: 50vh; }
   .hero-split__center { display: none; }
   .hero-split__samui {
-    background: url('../images/hero-turtle-768w.webp') center/cover no-repeat;
+    background: url('../images/barracuda-tornado-768w.webp') center/cover no-repeat;
   }
   .hero-split__uae {
     background: url('../images/triggerfish-768w.webp') center/cover no-repeat;
