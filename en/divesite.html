@@ -93,203 +93,78 @@
       </div>
     </section>
 
-    <!-- DIVE SITE MAP -->
+    <!-- DIVE SITE MAP (Leaflet) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+      #divemap { height: 600px; border-radius: 16px; border: 1px solid rgba(14,165,233,0.2); }
+      .dive-flag { background: none; border: none; }
+      .dive-flag-inner { display: flex; flex-direction: column; align-items: center; cursor: pointer; }
+      .dive-flag-inner svg { filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5)); transition: transform 0.2s; }
+      .dive-flag-inner:hover svg { transform: scale(1.2); }
+      .dive-flag-label { color: #fff; font-size: 11px; font-weight: 700; font-family: Outfit, sans-serif; text-shadow: 0 1px 4px rgba(0,0,0,0.9), 0 0 8px rgba(0,0,0,0.7); white-space: nowrap; margin-top: 2px; }
+      .leaflet-popup-content-wrapper { background: #0f1d2e; color: #fff; border: 1px solid rgba(14,165,233,0.3); border-radius: 12px; }
+      .leaflet-popup-tip { background: #0f1d2e; }
+      .leaflet-popup-content { font-family: Outfit, sans-serif; font-size: 14px; }
+      .leaflet-popup-content a { color: #0ea5e9; font-weight: 600; text-decoration: none; }
+      .leaflet-popup-content a:hover { text-decoration: underline; }
+      @media (max-width: 768px) { #divemap { height: 450px; } .dive-flag-label { font-size: 9px; } }
+    </style>
     <section class="section" id="map">
       <div class="container">
         <h2 class="section__title fade-in" data-ru="Карта дайв-сайтов" data-en="Dive Site Map">Dive Site Map</h2>
-        <p class="section__subtitle fade-in" data-ru="Нажмите на флажок, чтобы перейти к описанию дайв-сайта" data-en="Click a flag to see dive site details">Click a flag to see dive site details</p>
-        <div style="max-width:800px;margin:0 auto;position:relative;">
-          <svg viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;font-family:Outfit,sans-serif;">
-            <!-- Ocean background -->
-            <rect width="600" height="800" fill="#0a1628" rx="16"/>
-            <!-- Water gradient -->
-            <defs>
-              <radialGradient id="glow" cx="50%" cy="45%" r="55%">
-                <stop offset="0%" stop-color="#0e4d6e" stop-opacity="0.6"/>
-                <stop offset="100%" stop-color="#0a1628" stop-opacity="0"/>
-              </radialGradient>
-              <linearGradient id="island" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stop-color="#2d8a4e"/>
-                <stop offset="100%" stop-color="#1a5c2e"/>
-              </linearGradient>
-            </defs>
-            <rect width="600" height="800" fill="url(#glow)"/>
-
-            <!-- Koh Tao island shape (simplified) -->
-            <path d="M280,120 C310,115 340,130 355,160 C370,190 375,230 370,270 C365,310 355,350 340,390 C325,430 310,460 300,480 C290,500 280,520 285,540 C290,560 310,570 320,555 C330,540 325,520 310,510 C295,500 285,480 290,460 C295,440 310,430 325,425 C340,420 360,410 370,390 C355,420 330,445 310,450 C290,455 275,470 270,500 C265,530 275,560 260,570 C245,580 230,560 235,530 C240,500 250,480 255,460 C260,440 250,420 240,400 C230,380 225,350 225,320 C225,290 230,260 240,230 C250,200 260,170 270,145 Z" fill="url(#island)" stroke="#3da86a" stroke-width="1.5" opacity="0.9"/>
-
-            <!-- Nang Yuan islands (top left) -->
-            <ellipse cx="225" cy="95" rx="20" ry="12" fill="url(#island)" stroke="#3da86a" stroke-width="1" opacity="0.8"/>
-            <ellipse cx="210" cy="80" rx="15" ry="10" fill="url(#island)" stroke="#3da86a" stroke-width="1" opacity="0.8"/>
-            <ellipse cx="240" cy="80" rx="12" ry="8" fill="url(#island)" stroke="#3da86a" stroke-width="1" opacity="0.8"/>
-
-            <!-- Title -->
-            <text x="300" y="310" text-anchor="middle" fill="rgba(255,255,255,0.15)" font-size="32" font-weight="800" letter-spacing="6">KOH TAO</text>
-
-            <!-- Scale bar -->
-            <line x1="430" y1="760" x2="530" y2="760" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
-            <line x1="430" y1="755" x2="430" y2="765" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
-            <line x1="530" y1="755" x2="530" y2="765" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
-            <text x="480" y="778" text-anchor="middle" fill="rgba(255,255,255,0.4)" font-size="11">2 km</text>
-
-            <!-- DIVE SITE MARKERS (red flags with labels) -->
-            <style>
-              .ds-marker { cursor: pointer; transition: transform 0.2s; }
-              .ds-marker:hover { transform: scale(1.15); }
-              .ds-marker:hover .ds-label { fill: #0ea5e9; }
-              .ds-flag { fill: #ef4444; }
-              .ds-pole { stroke: #fff; stroke-width: 1.5; }
-              .ds-label { fill: #fff; font-size: 11px; font-weight: 600; }
-              .ds-label-sm { fill: rgba(255,255,255,0.7); font-size: 9px; }
-            </style>
-
-            <!-- Japanese Gardens / Nang Yuan -->
-            <a href="japanese-gardens.html" class="ds-marker">
-              <line x1="195" y1="65" x2="195" y2="85" class="ds-pole"/>
-              <polygon points="195,65 215,70 195,75" class="ds-flag"/>
-              <text x="170" y="60" text-anchor="middle" class="ds-label" data-ru="Japanese Gardens" data-en="Japanese Gardens">Japanese Gardens</a>
-
-            <!-- Hin Pee Wee -->
-            <a href="divesitehinpeewee.html" class="ds-marker">
-              <line x1="185" y1="165" x2="185" y2="185" class="ds-pole"/>
-              <polygon points="185,165 205,170 185,175" class="ds-flag"/>
-              <text x="145" y="160" text-anchor="middle" class="ds-label" data-ru="Hin Pee Wee" data-en="Hin Pee Wee">Hin Pee Wee</a>
-
-            <!-- White Rock -->
-            <a href="divesitewhiterock.html" class="ds-marker">
-              <line x1="190" y1="220" x2="190" y2="240" class="ds-pole"/>
-              <polygon points="190,220 210,225 190,230" class="ds-flag"/>
-              <text x="150" y="215" text-anchor="middle" class="ds-label" data-ru="White Rock" data-en="White Rock">White Rock</a>
-
-            <!-- Twins / Nang Yuan -->
-            <a href="divesitetwins.html" class="ds-marker">
-              <line x1="215" y1="110" x2="215" y2="130" class="ds-pole"/>
-              <polygon points="215,110 235,115 215,120" class="ds-flag"/>
-              <text x="255" y="108" text-anchor="start" class="ds-label" data-ru="Twins" data-en="Twins">Twins</a>
-
-            <!-- Lighthouse -->
-            <a href="divesitelighthouse.html" class="ds-marker">
-              <line x1="395" y1="175" x2="395" y2="195" class="ds-pole"/>
-              <polygon points="395,175 415,180 395,185" class="ds-flag"/>
-              <text x="435" y="178" text-anchor="start" class="ds-label" data-ru="Lighthouse" data-en="Lighthouse">Lighthouse</a>
-
-            <!-- Hin Wong Pinnacle -->
-            <a href="divesitehinwongpinnacle.html" class="ds-marker">
-              <line x1="405" y1="230" x2="405" y2="250" class="ds-pole"/>
-              <polygon points="405,230 425,235 405,240" class="ds-flag"/>
-              <text x="445" y="233" text-anchor="start" class="ds-label" data-ru="Hin Wong" data-en="Hin Wong">Hin Wong</a>
-
-            <!-- Laem Thian -->
-            <a href="divesitelaemthian.html" class="ds-marker">
-              <line x1="385" y1="290" x2="385" y2="310" class="ds-pole"/>
-              <polygon points="385,290 405,295 385,300" class="ds-flag"/>
-              <text x="425" y="293" text-anchor="start" class="ds-label" data-ru="Laem Thian" data-en="Laem Thian">Laem Thian</a>
-
-            <!-- Tanote Bay -->
-            <a href="divesitetanotebay.html" class="ds-marker">
-              <line x1="380" y1="340" x2="380" y2="360" class="ds-pole"/>
-              <polygon points="380,340 400,345 380,350" class="ds-flag"/>
-              <text x="420" y="343" text-anchor="start" class="ds-label" data-ru="Tanote Bay" data-en="Tanote Bay">Tanote Bay</a>
-
-            <!-- Hin Ngam / Aow Leuk -->
-            <a href="divesitehinngamaowleuk.html" class="ds-marker">
-              <line x1="360" y1="395" x2="360" y2="415" class="ds-pole"/>
-              <polygon points="360,395 380,400 360,405" class="ds-flag"/>
-              <text x="400" y="398" text-anchor="start" class="ds-label" data-ru="Hin Ngam" data-en="Hin Ngam">Hin Ngam</a>
-
-            <!-- Shark Island -->
-            <a href="divesitesharkisland.html" class="ds-marker">
-              <line x1="340" y1="460" x2="340" y2="480" class="ds-pole"/>
-              <polygon points="340,460 360,465 340,470" class="ds-flag"/>
-              <text x="370" y="463" text-anchor="start" class="ds-label" data-ru="Shark Island" data-en="Shark Island">Shark Island</a>
-
-            <!-- HTMS Sattakut -->
-            <a href="divesitehtmssattakut.html" class="ds-marker">
-              <line x1="200" y1="270" x2="200" y2="290" class="ds-pole"/>
-              <polygon points="200,270 220,275 200,280" class="ds-flag"/>
-              <text x="150" y="268" text-anchor="middle" class="ds-label" data-ru="HTMS Sattakut" data-en="HTMS Sattakut">HTMS Sattakut</a>
-
-            <!-- Red Rock -->
-            <a href="divesiteredrock.html" class="ds-marker">
-              <line x1="200" y1="135" x2="200" y2="155" class="ds-pole"/>
-              <polygon points="200,135 220,140 200,145" class="ds-flag"/>
-              <text x="160" y="132" text-anchor="middle" class="ds-label" data-ru="Red Rock" data-en="Red Rock">Red Rock</a>
-
-            <!-- Mango Bay -->
-            <a href="divesitemangobay.html" class="ds-marker">
-              <line x1="310" y1="140" x2="310" y2="160" class="ds-pole"/>
-              <polygon points="310,140 330,145 310,150" class="ds-flag"/>
-              <text x="350" y="143" text-anchor="start" class="ds-label" data-ru="Mango Bay" data-en="Mango Bay">Mango Bay</a>
-
-            <!-- King Kong -->
-            <a href="divesitekingkong.html" class="ds-marker">
-              <line x1="375" y1="430" x2="375" y2="450" class="ds-pole"/>
-              <polygon points="375,430 395,435 375,440" class="ds-flag"/>
-              <text x="415" y="433" text-anchor="start" class="ds-label" data-ru="King Kong" data-en="King Kong">King Kong</a>
-
-            <!-- Pottery / 3 Rocks -->
-            <a href="divesitepottery3rocks.html" class="ds-marker">
-              <line x1="220" y1="345" x2="220" y2="365" class="ds-pole"/>
-              <polygon points="220,345 240,350 220,355" class="ds-flag"/>
-              <text x="175" y="340" text-anchor="middle" class="ds-label" data-ru="3 Rocks" data-en="3 Rocks">3 Rocks</a>
-
-            <!-- Buoyancy World -->
-            <a href="divesitebuoyancyworld.html" class="ds-marker">
-              <line x1="245" y1="130" x2="245" y2="150" class="ds-pole"/>
-              <polygon points="245,130 265,135 245,140" class="ds-flag"/>
-              <text x="285" y="133" text-anchor="start" class="ds-label-sm" data-ru="Buoyancy World" data-en="Buoyancy World">Buoyancy World</a>
-
-            <!-- Biorock -->
-            <a href="divesitebiorock.html" class="ds-marker">
-              <line x1="265" y1="155" x2="265" y2="175" class="ds-pole"/>
-              <polygon points="265,155 285,160 265,165" class="ds-flag"/>
-              <text x="295" y="158" text-anchor="start" class="ds-label-sm" data-ru="Biorock" data-en="Biorock">Biorock</a>
-
-            <!-- Koh Yippon -->
-            <a href="divesitekohyippon.html" class="ds-marker">
-              <line x1="180" y1="390" x2="180" y2="410" class="ds-pole"/>
-              <polygon points="180,390 200,395 180,400" class="ds-flag"/>
-              <text x="140" y="388" text-anchor="middle" class="ds-label" data-ru="Koh Yippon" data-en="Koh Yippon">Koh Yippon</a>
-
-            <!-- No Name Pinnacle -->
-            <a href="divesitenonomepinnacle.html" class="ds-marker">
-              <line x1="255" y1="100" x2="255" y2="120" class="ds-pole"/>
-              <polygon points="255,100 275,105 255,110" class="ds-flag"/>
-              <text x="295" y="103" text-anchor="start" class="ds-label-sm" data-ru="No Name" data-en="No Name">No Name</a>
-
-            <!-- REMOTE SITES (arrows/labels pointing outward) -->
-
-            <!-- Chumphon Pinnacle (northwest, ~10km) -->
-            <a href="divesitechumphonpinnacle.html" class="ds-marker">
-              <line x1="60" y1="120" x2="60" y2="140" class="ds-pole"/>
-              <polygon points="60,120 80,125 60,130" class="ds-flag"/>
-              <text x="70" y="115" text-anchor="start" class="ds-label" data-ru="Chumphon Pinnacle" data-en="Chumphon Pinnacle">Chumphon Pinnacle</a>
-
-            <!-- Southwest Pinnacle -->
-            <a href="divesitesouthwestpinnacle.html" class="ds-marker">
-              <line x1="100" y1="640" x2="100" y2="660" class="ds-pole"/>
-              <polygon points="100,640 120,645 100,650" class="ds-flag"/>
-              <text x="130" y="643" text-anchor="start" class="ds-label" data-ru="SW Pinnacle" data-en="SW Pinnacle">SW Pinnacle</a>
-
-            <!-- Green Rock -->
-            <a href="divesitegreenrock.html" class="ds-marker">
-              <line x1="170" y1="55" x2="170" y2="75" class="ds-pole"/>
-              <polygon points="170,55 190,60 170,65" class="ds-flag"/>
-              <text x="130" y="50" text-anchor="middle" class="ds-label" data-ru="Green Rock" data-en="Green Rock">Green Rock</a>
-
-            <!-- Sail Rock (far south) -->
-            <a href="divesitesailrock.html" class="ds-marker">
-              <line x1="450" y1="710" x2="450" y2="730" class="ds-pole"/>
-              <polygon points="450,710 470,715 450,720" class="ds-flag"/>
-              <text x="480" y="713" text-anchor="start" class="ds-label" data-ru="Sail Rock" data-en="Sail Rock">Sail Rock</a>
-
-            <!-- Direction arrow to Samui -->
-            <text x="300" y="790" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-size="11">↓ Koh Samui — 65 km</text>
-
-          </svg>
-        </div>
+        <p class="section__subtitle fade-in" data-ru="Нажмите на маркер, чтобы узнать больше о дайв-сайте" data-en="Click a marker to learn more about a dive site">Click a marker to learn more about a dive site</p>
+        <div id="divemap"></div>
       </div>
     </section>
+    <script>
+    (function(){
+      var map = L.map('divemap',{scrollWheelZoom:false,attributionControl:false}).setView([10.065,99.825],12);
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
+        maxZoom:16,minZoom:10
+      }).addTo(map);
+      L.control.attribution({prefix:false}).addTo(map);
+
+      var flagSvg='<svg width="20" height="26" viewBox="0 0 20 26"><line x1="3" y1="6" x2="3" y2="26" stroke="#fff" stroke-width="2"/><polygon points="3,2 19,7 3,12" fill="#ef4444" stroke="#b91c1c" stroke-width="0.5"/></svg>';
+
+      var sites=[
+        {n:"Sail Rock",lat:9.9478,lng:99.9361,d:"5-35m",lvl:"Intermediate",url:"divesitesailrock.html",desc_ru:"Лучший дайв-сайт Сиамского залива. Chimney, китовые акулы",desc_en:"Best dive site in the Gulf. Chimney, whale sharks"},
+        {n:"Chumphon Pinnacle",lat:10.1147,lng:99.7267,d:"14-36m",lvl:"Advanced",url:"divesitechumphonpinnacle.html",desc_ru:"Самый знаменитый пиннакл Ко Тао. Китовые акулы, гигантские тревалли",desc_en:"Most famous Koh Tao pinnacle. Whale sharks, giant trevallies"},
+        {n:"Southwest Pinnacle",lat:10.0167,lng:99.7833,d:"5-26m",lvl:"Intermediate",url:"divesitesouthwestpinnacle.html",desc_ru:"Группа подводных скал. Барракуды, групперы, рифовые акулы",desc_en:"Group of underwater rocks. Barracudas, groupers, reef sharks"},
+        {n:"Green Rock",lat:10.1028,lng:99.8167,d:"5-25m",lvl:"Intermediate",url:"divesitegreenrock.html",desc_ru:"Пещеры и swim-through. Барракуды, групперы, мурены",desc_en:"Caves and swim-throughs. Barracudas, groupers, morays"},
+        {n:"Japanese Gardens",lat:10.1000,lng:99.8111,d:"5-12m",lvl:"Easy",url:"japanese-gardens.html",desc_ru:"Коралловый сад у Нанг Юань. Идеален для начинающих",desc_en:"Coral garden near Nang Yuan. Perfect for beginners"},
+        {n:"Twins",lat:10.0972,lng:99.8194,d:"5-18m",lvl:"Easy",url:"divesitetwins.html",desc_ru:"Два подводных пиннакла. Немо, ночной дайвинг",desc_en:"Two underwater pinnacles. Nemo, night diving"},
+        {n:"White Rock",lat:10.0667,lng:99.8083,d:"5-22m",lvl:"Easy",url:"divesitewhiterock.html",desc_ru:"Один из крупнейших сайтов Ко Тао. Черепахи, ночной дайвинг",desc_en:"One of Koh Tao's largest sites. Turtles, night diving"},
+        {n:"Shark Island",lat:10.0300,lng:99.8380,d:"5-24m",lvl:"Intermediate",url:"divesitesharkisland.html",desc_ru:"Сильные течения, скаты, рифовые акулы",desc_en:"Strong currents, rays, reef sharks"},
+        {n:"HTMS Sattakut",lat:10.0583,lng:99.8028,d:"18-30m",lvl:"Advanced",url:"divesitehtmssattakut.html",desc_ru:"Затонувший военный корабль. Длина 49м",desc_en:"Sunken warship wreck. 49m long"},
+        {n:"Lighthouse",lat:10.0860,lng:99.8470,d:"5-24m",lvl:"Easy",url:"divesitelighthouse.html",desc_ru:"Красивые кораллы, морские коньки, трубкозубы",desc_en:"Beautiful corals, seahorses, pipefish"},
+        {n:"Hin Wong Pinnacle",lat:10.0750,lng:99.8472,d:"5-22m",lvl:"Intermediate",url:"divesitehinwongpinnacle.html",desc_ru:"Подводная скала с мягкими кораллами",desc_en:"Underwater rock with soft corals"},
+        {n:"Laem Thian",lat:10.0639,lng:99.8444,d:"5-18m",lvl:"Easy",url:"divesitelaemthian.html",desc_ru:"Макро-дайвинг. Морские коньки, голожаберники",desc_en:"Macro diving. Seahorses, nudibranchs"},
+        {n:"Tanote Bay",lat:10.0556,lng:99.8417,d:"5-14m",lvl:"Easy",url:"divesitetanotebay.html",desc_ru:"Мелководная бухта. Черепахи, рыбы-клоуны",desc_en:"Shallow bay. Turtles, clownfish"},
+        {n:"Hin Ngam / Aow Leuk",lat:10.0417,lng:99.8389,d:"5-18m",lvl:"Easy",url:"divesitehinngamaowleuk.html",desc_ru:"Гранитные валуны, снорклинг и дайвинг",desc_en:"Granite boulders, snorkeling and diving"},
+        {n:"King Kong",lat:10.0361,lng:99.8361,d:"5-14m",lvl:"Easy",url:"divesitekingkong.html",desc_ru:"Валуны и кораллы. Барракуды, тригерфиш",desc_en:"Boulders and corals. Barracudas, triggerfish"},
+        {n:"Mango Bay",lat:10.0917,lng:99.8333,d:"3-16m",lvl:"Easy",url:"divesitemangobay.html",desc_ru:"Тихая бухта для обучения. Черепахи",desc_en:"Calm bay for training. Turtles"},
+        {n:"Red Rock",lat:10.0944,lng:99.8083,d:"5-20m",lvl:"Easy",url:"divesiteredrock.html",desc_ru:"Красные кораллы, черепахи, мурены",desc_en:"Red corals, turtles, morays"},
+        {n:"Hin Pee Wee",lat:10.0806,lng:99.8000,d:"5-20m",lvl:"Easy",url:"divesitehinpeewee.html",desc_ru:"Маленький пиннакл, хорош для обучения",desc_en:"Small pinnacle, good for training"},
+        {n:"3 Rocks / Pottery",lat:10.0480,lng:99.7972,d:"5-18m",lvl:"Easy",url:"divesitepottery3rocks.html",desc_ru:"Три подводные скалы. Осьминоги, нудибранчи",desc_en:"Three underwater rocks. Octopus, nudibranchs"},
+        {n:"Koh Yippon",lat:10.0444,lng:99.7917,d:"5-16m",lvl:"Easy",url:"divesitekohyippon.html",desc_ru:"Маленький остров с кораллами",desc_en:"Small island with corals"},
+        {n:"Buoyancy World",lat:10.0944,lng:99.8222,d:"6-12m",lvl:"Easy",url:"divesitebuoyancyworld.html",desc_ru:"Тренировочная площадка для плавучести",desc_en:"Buoyancy training ground"},
+        {n:"Biorock",lat:10.0889,lng:99.8250,d:"5-10m",lvl:"Easy",url:"divesitebiorock.html",desc_ru:"Искусственный риф, проект восстановления кораллов",desc_en:"Artificial reef, coral restoration project"},
+        {n:"No Name Pinnacle",lat:10.0960,lng:99.8250,d:"8-20m",lvl:"Intermediate",url:"divesitenonomepinnacle.html",desc_ru:"Скрытый пиннакл рядом с Twins",desc_en:"Hidden pinnacle near Twins"}
+      ];
+
+      var lang=localStorage.getItem('poseidon-lang')||'ru';
+      sites.forEach(function(s){
+        var icon=L.divIcon({className:'dive-flag',html:'<div class="dive-flag-inner">'+flagSvg+'<span class="dive-flag-label">'+s.n+'</span></div>',iconSize:[80,40],iconAnchor:[3,26]});
+        var desc=lang==='en'?s.desc_en:s.desc_ru;
+        var more=lang==='en'?'Details':'Подробнее';
+        var popup='<b>'+s.n+'</b><br>'+s.d+' · '+s.lvl+'<br><span style="opacity:0.8">'+desc+'</span><br><a href="'+s.url+'">'+more+' →</a>';
+        L.marker([s.lat,s.lng],{icon:icon}).addTo(map).bindPopup(popup);
+      });
+
+      map.fitBounds([[9.94,99.72],[10.12,99.86]],{padding:[30,30]});
+    })();
+    </script>
 
     <!-- DIVE SITES -->
     <section class="section section--dark" id="sites">
