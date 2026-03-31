@@ -453,6 +453,7 @@ ul { list-style: none; }
   }
   .nav-link { font-size: 18px; padding: 12px 24px; }
   .hide-mobile { display: none !important; }
+  .breadcrumb { display: none; }
 
   .hero-split { flex-direction: column; }
   .hero-split__half { min-height: 50vh; }
