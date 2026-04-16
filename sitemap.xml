@@ -226,61 +226,14 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  <!-- UAE -->
   <url>
-    <loc>https://www.poseidon.pro/uae</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
   <url>
-    <loc>https://www.poseidon.pro/diving-fujairah</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
   <url>
-    <loc>https://www.poseidon.pro/diving-dubai-rak</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
   <url>
-    <loc>https://www.poseidon.pro/divng-v-dubai</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
   <url>
-    <loc>https://www.poseidon.pro/diving-tours-uae</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
   <url>
-    <loc>https://www.poseidon.pro/padi-courses-uae</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
   <url>
-    <loc>https://www.poseidon.pro/padi-spec-uae</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
   <url>
-    <loc>https://www.poseidon.pro/prices-uae</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.poseidon.pro/contacts-uae</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
 
   <!-- English Version -->
   <url>
@@ -506,57 +459,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.poseidon.pro/en/uae</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
   <url>
-    <loc>https://www.poseidon.pro/en/diving-fujairah</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
   <url>
-    <loc>https://www.poseidon.pro/en/diving-dubai-rak</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
   <url>
-    <loc>https://www.poseidon.pro/en/divng-v-dubai</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
   <url>
-    <loc>https://www.poseidon.pro/en/diving-tours-uae</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
   <url>
-    <loc>https://www.poseidon.pro/en/padi-courses-uae</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
   <url>
-    <loc>https://www.poseidon.pro/en/padi-spec-uae</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
   <url>
-    <loc>https://www.poseidon.pro/en/prices-uae</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
   <url>
-    <loc>https://www.poseidon.pro/en/contacts-uae</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
 </urlset>
