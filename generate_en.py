@@ -167,8 +167,8 @@ def translate_schema(html):
                     item["name"] = BREADCRUMB_TRANSLATIONS[name]
                 # Update URLs
                 item_url = item.get("item", "")
-                if item_url and "poseidon.pro/" in item_url and "/en/" not in item_url:
-                    item["item"] = item_url.replace("poseidon.pro/", "poseidon.pro/en/")
+                if item_url and "amplediving.com/" in item_url and "/en/" not in item_url:
+                    item["item"] = item_url.replace("amplediving.com/", "amplediving.com/en/")
 
         # Translate FAQPage
         if data.get("@type") == "FAQPage":
@@ -247,12 +247,12 @@ def fix_links(html, filename):
 
 def add_hreflang(html, filename):
     """Add hreflang alternate links in <head>."""
-    ru_url = f"https://www.poseidon.pro/{filename}"
-    en_url = f"https://www.poseidon.pro/en/{filename}"
+    ru_url = f"https://www.amplediving.com/{filename}"
+    en_url = f"https://www.amplediving.com/en/{filename}"
 
     if filename == "index.html":
-        ru_url = "https://www.poseidon.pro/"
-        en_url = "https://www.poseidon.pro/en/"
+        ru_url = "https://www.amplediving.com/"
+        en_url = "https://www.amplediving.com/en/"
 
     hreflang = f'  <link rel="alternate" hreflang="ru" href="{ru_url}">\n'
     hreflang += f'  <link rel="alternate" hreflang="en" href="{en_url}">\n'
