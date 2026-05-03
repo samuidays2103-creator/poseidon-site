@@ -279,8 +279,8 @@ ul { list-style: none; }
   background: image-set(url('../images/tour-diving-reef.webp') type('image/webp'), url('../images/tour-diving-reef.jpg') type('image/jpeg')) center/cover no-repeat;
 }
 .destination__visual--kotao {
-  background: url('../images/chumphon-pinnacle.jpg') center/cover no-repeat;
-  background: image-set(url('../images/chumphon-pinnacle.webp') type('image/webp'), url('../images/chumphon-pinnacle.jpg') type('image/jpeg')) center/cover no-repeat;
+  background: url('../images/tour-kotao-turtle.jpg') center/cover no-repeat;
+  background: image-set(url('../images/tour-kotao-turtle.webp') type('image/webp'), url('../images/tour-kotao-turtle.jpg') type('image/jpeg')) center/cover no-repeat;
 }
 .destination__visual--sailrock {
   background: url('../images/sail-rock.jpg') center/cover no-repeat;
