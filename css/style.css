@@ -278,9 +278,17 @@ ul { list-style: none; }
   background: url('../images/tour-diving-reef.jpg') center/cover no-repeat;
   background: image-set(url('../images/tour-diving-reef.webp') type('image/webp'), url('../images/tour-diving-reef.jpg') type('image/jpeg')) center/cover no-repeat;
 }
-.destination__visual--uae {
-  background: url('../images/dive-center.jpg') center/cover no-repeat;
-  background: image-set(url('../images/dive-center.webp') type('image/webp'), url('../images/dive-center.jpg') type('image/jpeg')) center/cover no-repeat;
+.destination__visual--kotao {
+  background: url('../images/chumphon-pinnacle.jpg') center/cover no-repeat;
+  background: image-set(url('../images/chumphon-pinnacle.webp') type('image/webp'), url('../images/chumphon-pinnacle.jpg') type('image/jpeg')) center/cover no-repeat;
+}
+.destination__visual--sailrock {
+  background: url('../images/sail-rock.jpg') center/cover no-repeat;
+  background: image-set(url('../images/sail-rock.webp') type('image/webp'), url('../images/sail-rock.jpg') type('image/jpeg')) center/cover no-repeat;
+}
+.destination__visual--nangyuan {
+  background: url('../images/nang-yuan.jpg') center/cover no-repeat;
+  background: image-set(url('../images/nang-yuan.webp') type('image/webp'), url('../images/nang-yuan.jpg') type('image/jpeg')) center/cover no-repeat;
 }
 .destination__overlay {
   position: absolute; inset: 0;
